@@ -1,0 +1,13 @@
+/* Variabels */
+:root {
+    --primary-dark-color: #111111;
+    --primary-text-light-color:  #FFFFFF;
+    --primary-background-light-color: #FAFAFA;
+    --secondary-dark-color: #1E1823;
+    --orange-background: #FD9222;
+    --pressed-state-orange: #FCF1E0;
+
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
