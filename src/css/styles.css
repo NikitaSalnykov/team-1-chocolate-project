@@ -24,5 +24,11 @@
 @import url('./layout/reviews.css');
 @import url('./layout/subscribe.css');
 @import url('./layout/footer.css');
+/* Modals */
+@import url('./layout/modal/buy-now-modal.css');
+@import url('./layout/modal/explore-new-chocolate.css');
+@import url('./layout/modal/leave-review-modal.css');
+@import url('./layout/modal/thank-you-modal.css');
+
 
 
