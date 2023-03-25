@@ -1,5 +1,6 @@
 .section-our-product {
     margin-bottom: 72px;
+    overflow: hidden;
 }
 .container-our-product {
     margin: auto;
