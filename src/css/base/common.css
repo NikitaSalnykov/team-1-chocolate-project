@@ -14,6 +14,7 @@ body{
     line-height: calc(24/20);
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .title-exception{
@@ -36,6 +37,14 @@ body{
     line-height: calc(17/14);
     color: var(--primary-text-light-color);
 }
+
+.modal-btn{
+    background-color: var(--orange-background);
+    color: var(--primary-text-light-color);
+}
+
+
+
 .main-btn:hover,
 .main-btn:focus{
     color: var(--orange-background);
