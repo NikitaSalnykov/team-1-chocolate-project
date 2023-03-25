@@ -28,8 +28,8 @@
     gap: 0px 18px;
 }
 .li-our-product {
+    padding: 32px 0px;
     min-width: 270px;
-    min-height: 364px;
     background: #FFFFFF;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
