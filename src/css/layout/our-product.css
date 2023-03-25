@@ -59,12 +59,23 @@
     display: flex;
     justify-content: center;
     margin-bottom: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
 }
 .button-our-product {
     display: block;
     margin: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
     padding: 8px 20px;
-    gap: 14px;
     width: 94px;
     height: 33px;
     background: #FAFAFA;
