@@ -3,4 +3,65 @@
 }
 .container-our-product {
     margin: auto;
+    padding: 0px 20px;
+}
+.h2-our-product {
+    color: var(--primary-dark-color);
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    gap: 8px;
+}
+.h2-span-our-product{
+    color: var(--orange-background);
+}
+.ul-our-product {
+    margin: 0px;
+    padding-top: 50px;
+    display: flex;
+    gap: 0px 18px;
+}
+.li-our-product {
+    min-width: 270px;
+    min-height: 364px;
+    padding: 32px 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.img-our-product {
+    margin: auto;
+    height: 201px;
+    margin-bottom: 8px;
+}
+.h3-our-product {
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+.p-our-product {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.button-our-product {
+    display: block;
+    margin: auto;
 }
