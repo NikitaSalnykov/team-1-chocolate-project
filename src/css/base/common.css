@@ -1,5 +1,5 @@
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat-Regular", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(18/14);
@@ -9,6 +9,7 @@ body{
 }
 
 .title{
+    font-family: "Montserrat-SemiBold", sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: calc(24/20);

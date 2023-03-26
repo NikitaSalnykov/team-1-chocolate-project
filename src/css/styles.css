@@ -11,6 +11,7 @@
 /* Base */
 @import url('./base/common.css');
 @import url('./base/reset.css');
+@import url('./base/fonts.css');
 /* Components */
 @import url('./components/container.css');
 /* Layout */
