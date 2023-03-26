@@ -11,6 +11,7 @@
 /* Base */
 @import url('./base/common.css');
 @import url('./base/reset.css');
+@import url('./base/fonts.css');
 /* Components */
 @import url('./components/container.css');
 /* Layout */
@@ -24,8 +25,11 @@
 @import url('./layout/reviews.css');
 @import url('./layout/subscribe.css');
 @import url('./layout/footer.css');
-
-
+/* Modals */
+@import url('./layout/modal/buy-now-modal.css');
+@import url('./layout/modal/explore-new-chocolate.css');
+@import url('./layout/modal/leave-review-modal.css');
+@import url('./layout/modal/thank-you-modal.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -42,3 +46,4 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
