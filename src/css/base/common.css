@@ -1,3 +1,4 @@
+
 body{
     font-family: 'MontserratNormal', sans-serif;
     font-weight: 400;
@@ -17,25 +18,24 @@ body{
     text-align: center;
 }
 
-.title-exception{
-    color: var(--orange-background);
-
+.title-exception {
+  color: var(--orange-background);
 }
-.main-btn{
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 28px;
-    padding-left: 28px;
+.main-btn {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 28px;
+  padding-left: 28px;
 
-    border-radius: 100px;
-    background-color: var(--orange-background);
+  border-radius: 100px;
+  background-color: var(--orange-background);
 
-    border: none;
+  border: none;
 
-    font-weight: 600;
-    line-height: calc(17/14);
-    color: var(--primary-text-light-color);
+  font-weight: 600;
+  line-height: calc(17 / 14);
+  color: var(--primary-text-light-color);
 }
 
 .modal-btn{
@@ -46,34 +46,34 @@ body{
 
 
 .main-btn:hover,
-.main-btn:focus{
-    color: var(--orange-background);
+.main-btn:focus {
+  color: var(--orange-background);
 
-    background-color: var(--pressed-state-orange) ;
+  background-color: var(--pressed-state-orange);
 }
-.section{
-    padding-bottom: 72px;
+.section {
+  padding-bottom: 72px;
 }
-@media screen and (min-width: 768px ) {
-    .title{
-       font-size: 24px;
-       line-height: calc(28/24); 
-    }
-    .main-btn{
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-right: 40px;
-        padding-left: 40px;
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+  .main-btn {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 40px;
+    padding-left: 40px;
 
-        font-size: 18px;
-        line-height: calc(22/18);
-    }
-    .section{
-        padding-bottom: 100px;
-    }
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+  .section {
+    padding-bottom: 100px;
+  }
 }
-@media screen and (min-width:1200px) {
-    .section{
-        padding-bottom: 128px;
-    } 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 128px;
+  }
 }
