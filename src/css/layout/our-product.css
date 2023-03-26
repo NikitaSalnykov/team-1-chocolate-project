@@ -83,10 +83,11 @@
     background: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
+    transition: background-color var(--transition);
 }
-.swiper-slide.ul-our-product {
-}
-.swiper-wrapper {
+.button-our-product:hover,
+.button-our-product:focus {
+    background: var(--orange-background);
 }
 .swiper {
     margin-bottom: 32px;
