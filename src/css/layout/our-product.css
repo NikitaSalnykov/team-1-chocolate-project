@@ -85,10 +85,8 @@
     border-radius: 100px;
 }
 .swiper-slide.ul-our-product {
-    max-width: 272px;
 }
 .swiper-wrapper {
-    gap: 0px 18px;
 }
 .swiper {
     margin-bottom: 32px;
@@ -107,4 +105,13 @@
     background: #FD9222;
     flex: none;
     border-radius: 28px / 28px;
+}
+.swiper-slide-active{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .swiper-slide-active {
+    justify-content: flex-end;
+    }
 }

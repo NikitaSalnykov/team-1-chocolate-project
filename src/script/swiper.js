@@ -3,17 +3,20 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   breakpoints: {
-    // when window width is >= 320px
+    // when window width is >= 375px
     375: {
       slidesPerView: 1,
+      spaceBetween: 18
     },
-    // when window width is >= 480px
+    // when window width is >= 768px
     768: {
       slidesPerView: 2,
+      spaceBetween: 18
     },
-    // when window width is >= 640px
+    // when window width is >= 1200px
     1200: {
       slidesPerView: 4,
+      spaceBetween: 18
     },
   },
   // If we need pagination
