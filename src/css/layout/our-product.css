@@ -3,6 +3,7 @@
     overflow: hidden;
 }
 .container-our-product {
+    max-width: 375px;
     margin: auto;
     padding: 0px 20px;
 }
@@ -112,13 +113,15 @@
     justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-    .swiper-slide-active {
-    justify-content: flex-end;
+    .container-our-product {
+        max-width: 712px;
     }
 }
 @media (min-width: 1200px) {
-    .swiper-slide {
-    display: flex;
-    justify-content: center;
+    .container-our-product {
+    max-width: 1184px;
     }
+}
+.swiper-wrapper {
+    gap: 0px 18px;
 }
