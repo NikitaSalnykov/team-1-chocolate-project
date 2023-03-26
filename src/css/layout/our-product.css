@@ -39,7 +39,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 2px;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -52,7 +51,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 18px;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -64,13 +62,11 @@
 .button-our-product {
     display: block;
     margin: auto;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     padding: 8px 20px;
-    width: 94px;
     height: 33px;
     background: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
