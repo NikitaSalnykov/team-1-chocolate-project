@@ -93,7 +93,7 @@
 @media only screen and (min-width: 1199px) {
   .how-its-made-iframes {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(./img/pastry-chef-preparing-chocolate-cake.jpg);
+      url(../img/pastry-chef-preparing-chocolate-cake.jpg);
     border-radius: 15px;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@
   (min-width: 1199px) and (min-resolution: 2dppx) {
   .how-its-made-iframes {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(./img/pastry-chef-preparing-chocolate-cake@2x.jpg);
+      url(../img/pastry-chef-preparing-chocolate-cake@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
