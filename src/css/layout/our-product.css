@@ -111,8 +111,14 @@
     display: flex;
     justify-content: center;
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .swiper-slide-active {
     justify-content: flex-end;
+    }
+}
+@media (min-width: 1200px) {
+    .swiper-slide {
+    display: flex;
+    justify-content: center;
     }
 }
