@@ -1,1 +1,2 @@
-i
+import '../script/swiper.js';
+
