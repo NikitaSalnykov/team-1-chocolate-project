@@ -15,13 +15,12 @@ const swiper = new Swiper('.swiper', {
     1200: {
       slidesPerView: 4,
     },
-    // If we need pagination
+  },
+  // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    }
-  },
-
+    },
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
