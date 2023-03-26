@@ -1,6 +1,6 @@
 .subscribe-section{
     background-color: #42230F;
-    background-image: url(/img/mobile-background-subscribe.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/mobile-background-subscribe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,7 +11,7 @@
 (min-resolution: 192px),
 (min-resolution: 2dppx) {
     .subscribe-section{
-    background-image: url(/img/mobile-background-subscribe@2.jpg);;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/mobile-background-subscribe@2.jpg);;
 }
 }
     
@@ -33,24 +33,30 @@ max-width: 291px;
 }
 
 .subscribe-text{
-    max-width: 335px;
+    max-width: 326px;
 }
 
 .subcsribe-btn {
-    background-color: #FD9222;
-    color: var(--primary-text-light-color);;
+    background-color: var(--orange-background);
+    color: var(--orange-background-pressed);
+    transition: all var(--transition);
+}
+
+.subcsribe-btn:hover {
+    background-color: var(--pressed-state-orange);
+    color: var(--orange-background);
 }
 
 @media screen and (min-width:768px) {
     .subscribe-section{
-        background-image: url(/img/tablet-background-subscribe.jpg);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/tablet-background-subscribe.jpg);
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192px),
 (min-resolution: 2dppx) {
     .subscribe-section{
-    background-image: url(/img/tablet-background-subscribe@2.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/tablet-background-subscribe@2.jpg);
 }
 }
 .subscribe-container{
@@ -66,14 +72,14 @@ max-width: 291px;
 
 @media screen and (min-width:1200px) {
     .subscribe-section{
-        background-image: url(/img/desktop-background-subscribe.jpg);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/desktop-background-subscribe.jpg);
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192px),
 (min-resolution: 2dppx) {
     .subscribe-section{
-    background-image: url(/img/desktop-background-subscribe@2.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/desktop-background-subscribe@2.jpg);
 }
 }
 }
