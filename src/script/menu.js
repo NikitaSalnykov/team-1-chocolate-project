@@ -8,6 +8,7 @@
     closeMenuBtn.addEventListener('click', toggleMenu);
   
     
+
     window
       .matchMedia('(min-width: 600px)')
       .addEventListener(
