@@ -1,0 +1,128 @@
+
+.section-our-product {
+    margin-bottom: 72px;
+    overflow: hidden;
+}
+
+.container-our-product {
+    max-width: 287px;
+    margin: auto;
+    padding: 0px;
+}
+
+.ul-our-product {
+    width: 272px;
+    margin: 0px;
+    padding-top: 50px;
+    display: flex;
+}
+
+.li-our-product {
+    padding: 32px 0px;
+    min-width: 270px;
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.img-our-product {
+    margin: auto;
+    height: 201px;
+    margin-bottom: 8px;
+}
+
+.h3-our-product {
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.p-our-product {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.button-our-product {
+    display: block;
+    margin: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 20px;
+    height: 33px;
+    background: #FAFAFA;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    transition: background-color var(--transition);
+}
+
+.button-our-product:hover,
+.button-our-product:focus {
+    background: var(--orange-background);
+}
+
+.swiper {
+    margin-bottom: 32px;
+    justify-content: center;
+}
+
+
+.swiper-pagination {
+    position: unset;
+}
+
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background: rgba(17, 17, 17, 0.3);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    background: #FD9222;
+    flex: none;
+    border-radius: 28px / 28px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    max-width: 270px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container-our-product {
+        max-width: 714px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .container-our-product {
+        max-width: 1146px;
+    }
+}
+
+.swiper-wrapper {
+    gap: 0px 18px;
+}
+

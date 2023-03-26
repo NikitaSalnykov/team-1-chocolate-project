@@ -1,0 +1,79 @@
+.subscribe-section{
+    background-color: #42230F;
+    background-image: url(/img/mobile-background-subscribe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--primary-text-light-color);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192px),
+(min-resolution: 2dppx) {
+    .subscribe-section{
+    background-image: url(/img/mobile-background-subscribe@2.jpg);;
+}
+}
+    
+
+.subscribe-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+
+    padding-top: 62px;
+    padding-bottom: 62px;
+}
+
+.subscribe-title{
+max-width: 291px;
+}
+
+.subscribe-text{
+    max-width: 335px;
+}
+
+.subcsribe-btn {
+    background-color: #FD9222;
+    color: var(--primary-text-light-color);;
+}
+
+@media screen and (min-width:768px) {
+    .subscribe-section{
+        background-image: url(/img/tablet-background-subscribe.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192px),
+(min-resolution: 2dppx) {
+    .subscribe-section{
+    background-image: url(/img/tablet-background-subscribe@2.jpg);
+}
+}
+.subscribe-container{
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.subscribe-text{
+    max-width: 467px;
+}
+
+}
+
+@media screen and (min-width:1200px) {
+    .subscribe-section{
+        background-image: url(/img/desktop-background-subscribe.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192px),
+(min-resolution: 2dppx) {
+    .subscribe-section{
+    background-image: url(/img/desktop-background-subscribe@2.jpg);
+}
+}
+}

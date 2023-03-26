@@ -1,19 +1,21 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  letter-spacing: -0.02em;
-  color: var(--primary-dark-color);
-  background-color: var(--primary-background-light-color);
+
+body{
+    font-family: 'MontserratNormal', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18/14);
+    letter-spacing: -0.02em;
+    color: var(--primary-dark-color);
+    background-color: var(--primary-background-light-color);
 }
 
-.title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
+.title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .title-exception {
@@ -35,6 +37,14 @@ body {
   line-height: calc(17 / 14);
   color: var(--primary-text-light-color);
 }
+
+.modal-btn{
+    background-color: var(--orange-background);
+    color: var(--primary-text-light-color);
+}
+
+
+
 .main-btn:hover,
 .main-btn:focus {
   color: var(--orange-background);

@@ -1,0 +1,114 @@
+.title.components-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    max-width: 283px;
+}
+
+@media screen and (min-width:768px) {
+    .title.components-title {
+        max-width: 411px;
+        margin-bottom: 28px;
+    }
+}
+
+.components-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .components-text {
+        max-width: 486px;
+        margin-bottom: 50pxpx;
+    }
+}
+
+.components-list-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    .components-list-cards {
+        height: 572px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 32px;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+    .components-list-cards {
+        display: flex;
+        flex-direction: row;
+        column-gap: 19px;
+    }
+}
+
+.components-item-card {
+    background-color: var(--orange-background);
+    max-width: 335px;
+    height: 270px;
+    border-radius: 15px;
+
+}
+
+@media screen and (min-width: 1200px) {
+    .components-item-card {
+        width: 270px;
+    }
+}
+
+.components-item-card.milk {
+    background-color: var(--primary-text-light-color);
+    border: 1px solid;
+    border-color: var(--orange-background);
+}
+
+.components-item-card.nuts {
+    background-color: var(--secondary-dark-color); 
+}
+
+.components-item-card.coffee {
+    background-color: var(--primary-text-light-color);
+    border: 1px solid;
+    border-color: var(--orange-background);
+}
+
+.components-img {
+    padding-top: 28px;
+    padding-left: 56px;
+    padding-bottom: 25px;
+    padding-right: 56px;
+}
+
+@media screen and (min-width:1200px) {
+    .components-img {
+        padding-top: 28px;
+        padding-left: 28px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+}
+
+.components-h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18/14);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    padding-left: 28px;
+    color: var(--primary-text-light-color);
+}
+
+.components-h3.dark {
+    color: var(--primary-dark-color);
+}
