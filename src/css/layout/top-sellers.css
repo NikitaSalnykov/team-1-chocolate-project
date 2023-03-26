@@ -1,0 +1,197 @@
+section.top-sellers {
+    margin-bottom: 72px;
+}
+        .top-seller-list {
+            list-style: none;
+        }
+
+        .title-top-seller {
+            padding: 0px 0px 30px 0;
+            margin: 0;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    
+        .title-top-seller-span {
+            color: var(--orange-background);
+        }
+    
+        .top-seller-list {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        .top-seller-title 
+        {
+        margin: 0 0 32px 0px;
+        }
+    .top-seller-item
+            {
+            overflow: hidden;
+            align-items: center;
+            flex-wrap: wrap;
+            display: flex;
+            }
+            .top-seller-item:nth-child(2) {
+            justify-content: center;
+            }
+            .top-seller-item img {
+                
+             margin-bottom: 20px;
+            }
+
+            .top-seller-button {
+        width: 120px;
+        height: 41px;
+        }
+
+
+
+        @media screen and (max-width: 429px) {
+            .top-seller-item:last-child,.top-seller-button-info {
+                display: none;
+            }
+            
+        }
+
+
+        @media screen and (min-width: 429px) and (max-width: 768px) {
+    
+            .top-seller-item:first-child {
+                margin-bottom: 32px;
+            }
+    
+            .top-seller-item:nth-child(2) {
+    
+                justify-content: center;
+            }
+    
+            
+         .top-seller-item:last-child,
+         .top-seller-button-info {
+             display: none;
+         }
+    
+            .top-seller-item {
+                overflow: hidden;
+                align-items: center;
+                flex-wrap: wrap;
+    
+                display: flex;
+            }
+    
+            .top-seller-info-mobile {
+                max-width: 306px;
+                font-size: 14px;
+                letter-spacing: -0.02em;
+                padding: 0;
+                margin: 0;
+            }
+    
+            .top-seller-item img {
+                margin-bottom: 20px;
+            }
+    
+            .top-seller-info-mobile {
+                max-width: 306px;
+            }
+
+    
+        }
+    
+
+    
+        @media screen and (min-width: 768px) {
+    
+            .top-seller-list {
+                flex-direction: row;
+                /*align-items: center;*/
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 16px;
+            }
+    
+            .top-seller-item {
+                flex-basis: calc((100% - 16px)/2);
+                max-width: 344px;
+            }
+    
+            .top-seller-item:last-child {
+                display: none;
+            }
+    
+            .top-seller-button-info {
+                display: none;
+            }
+    
+            .top-seller-button.mobile-bottom {
+                float: right;
+            }
+    
+            .top-seller-item:first-child {
+            margin-bottom: 0px;
+            }
+
+            .top-seller-title 
+            {
+            margin: 0 0 50px 0px;
+            }
+
+            .top-seller-item {
+            overflow: hidden;
+            align-items: center;
+            /* flex-wrap: wrap; */
+            display: block;
+                        }
+            .top-seller-info.mobile {
+                                                     
+            max-width: 306px;
+            max-height: 90px;
+            }
+            .top-seller-button 
+            {
+            width: 162px;
+            height: 50px;
+            }
+        }
+    
+
+        @media screen and (min-width: 1200px) {
+        .top-seller-title 
+        {
+        margin: 0 0 50px 0px;
+        }
+    .top-seller-info.mobile,.mobile-bottom {
+    display: none;
+        }
+        .top-seller-item:last-child {
+         display: block;
+         }
+        .top-seller-button-info 
+        {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        }
+        .top-seller-info {
+        max-width: 407px;
+        max-height: 72px;
+        }
+        .top-seller-item img {
+        margin-bottom: 0px;
+        
+        }
+        .top-seller-button {
+         width: 162px;
+        height: 50px;
+        }
+        .top-seller-item {
+         flex-basis: calc((100% - 16px)/3);
+        max-width: 368px;
+        }
+        }
+       
+      
