@@ -3,9 +3,9 @@
     overflow: hidden;
 }
 .container-our-product {
-    max-width: 375px;
+    max-width: 287px;
     margin: auto;
-    padding: 0px 20px;
+    padding: 0px;
 }
 .h2-our-product {
     color: var(--primary-dark-color);
@@ -92,6 +92,7 @@
 }
 .swiper {
     margin-bottom: 32px;
+    justify-content: center;
 }
 .swiper-pagination {
     position: unset;
@@ -108,18 +109,19 @@
     flex: none;
     border-radius: 28px / 28px;
 }
-.swiper-slide-active{
+.swiper-slide {
     display: flex;
     justify-content: center;
+    max-width: 270px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
     .container-our-product {
-        max-width: 712px;
+        max-width: 714px;
     }
 }
 @media (min-width: 1200px) {
     .container-our-product {
-    max-width: 1184px;
+    max-width: 1146px;
     }
 }
 .swiper-wrapper {
