@@ -66,10 +66,11 @@
     .advantages-list  {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 32px;
+        gap: 60px;
     } 
     .advantages-item {
-        width: calc((100% - 32px) / 2);
+        width: calc((100% - 60px) / 2);
+        /* width: calc((100% - 32px) / 2); */
     } 
 }
 @media screen and (min-width: 1200px) {
