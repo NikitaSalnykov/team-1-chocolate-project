@@ -125,6 +125,9 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         font-size: 28px;
         line-height: calc(34 / 28);
     }
+    .hero-btn{
+        flex-basis: 50%;
+    }
     .scroll-btn {
         font-size: 14px;
         line-height: calc(18 / 14);
