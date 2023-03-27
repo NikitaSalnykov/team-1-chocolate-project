@@ -7,8 +7,13 @@
     openMenuBtn.addEventListener('click', toggleMenu);
     closeMenuBtn.addEventListener('click', toggleMenu);
   
+<<<<<<< Updated upstream
     
 
+=======
+    // Закрываем мобильное меню на более широких экранах
+    // в случае изменения ориентации устройства.
+>>>>>>> Stashed changes
     window
       .matchMedia('(min-width: 600px)')
       .addEventListener(
