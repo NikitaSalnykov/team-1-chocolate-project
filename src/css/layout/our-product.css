@@ -85,6 +85,9 @@
 }
 .swiper-pagination1 {
     position: unset;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
 }
 
 .swiper-pagination-bullet {
