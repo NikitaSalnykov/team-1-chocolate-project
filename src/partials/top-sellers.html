@@ -1,5 +1,5 @@
 
-<section class="top-sellers">
+<section class="section">
 <div class="container">
 
    <h2 class="title top-seller-title"><span class="title-exception">Top</span> Sellers</h2> 
@@ -7,17 +7,17 @@
 
         <ul class="top-seller-list">
 <li class="top-seller-item">
-    <img srcset="../img/top-seller-picture-1.jpg, ../img/top-seller-picture-2@2x.jpg 2x" alt="top-seller-picture-1" width="368">
+    <img srcset="/img/top-seller-picture-1.jpg, /img/top-seller-picture-1@2x.jpg 2x" alt="top-seller-picture-1" width="368">
 
     <p class="top-seller-info mobile">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for
     thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
 </li>
 <li class="top-seller-item">
-    <img srcset="../img/top-seller-picture-2.jpg, ../img/top-seller-picture-2@2x.jpg 2x" alt="top-seller-picture-2" width="368">
+    <img srcset="/img/top-seller-picture-2.jpg, /img/top-seller-picture-2@2x.jpg 2x" alt="top-seller-picture-2" width="368">
     <button id="open-modal-btn-mobile" class="main-btn top-seller-button mobile-bottom" >Buy now</button>
 </li>
 <li class="top-seller-item">
-    <img srcset="../img/top-seller-picture-3.jpg, ../img/top-seller-picture-3@2x.jpg 2x" alt="top-seller-picture-3.jpg" width="368">
+    <img srcset="/img/top-seller-picture-3.jpg, /img/top-seller-picture-3@2x.jpg 2x" alt="top-seller-picture-3.jpg" width="368">
 </li>
 
         </ul>
@@ -33,155 +33,10 @@
 </div>
 </section>
 
-<div id="modal-container">
-  <div id="modal" class="modal-buy-now">
-    <button type="button" id="close-modal-btn" class="close-button">
-
-      <svg width="12" height="12" class="close-icon">
-        <use href="../img/symbol-defs.svg#icon-x-close"></use>
-
-      </svg>
-    </button>
-    <form id="modal-form" class="modal-form" onsubmit="handleSubmit(event)">
-      <h1 class="title buy-now-title"><span class="title-exception">Buy</span> Now</h1>
-
-      <ul class="modal-buy-now-list-of-products">
-        <li class="modal-buy-now-item">
-          <img srcset="../img/kisspng-chocolate-bar-kinder.jpg 1x, ../img/kisspng-chocolate-bar-kinder@2x.jpg 2x"
-            src="../img/kisspng-chocolate-bar-kinder.jpg" alt="Mark Guerrero Product Designer" width="120">
-          <div class="modal-buy-now-gram">100 g</div>
-        </li>
 
 
-        <li class="modal-buy-now-item">
-          <img
-            srcset="../img/kisspng-chocolate-bar-praline-kinder-chocolate.jpg 1x, ../img/kisspng-chocolate-bar-praline-kinder-chocolate@2x.jpg 2x"
-            src="../img/kisspng-chocolate-bar-praline-kinder-chocolate.jpg" alt="kisspng-chocolate-bar-kinder"
-            width="120">
-          <div class="modal-buy-now-gram">200 g</div>
-        </li>
-
-        <li class="modal-buy-now-item">
-          <img
-            srcset="../img/transparent-chocolate-bar-dark-chocolate.jpg 1x, ../img/transparent-chocolate-bar-dark-chocolate@2x.jpg 2x"
-            src="../img/transparent-chocolate-bar-dark-chocolate.jpg" alt="transparent-chocolate-bar-dark-chocolate"
-            width="120">
-          <div class="modal-buy-now-gram">300 g</div>
-        </li>
-
-      </ul>
-      <div class="buy-now-form-field">
-        <label class="buy-now-info" for="personal-info"><span>Personal information</span>
-          <div class="personal-info-inputs">
-            <input class="modal-input name" type="text" id="name" name="name" placeholder="Name" required>
-            <input class="modal-input surname" type="text" id="surname" name="surname" placeholder="Surname" required>
-          </div>
-        </label>
-      </div>
-      <div class="buy-now-form-field">
-        <label class="buy-now-info" for="email">Email:
-          <input class="modal-input surname" type="email" id="email" name="email" placeholder="Enter Your email"
-            required>
-        </label>
-      </div>
-      <div class="buy-now-form-field">
-        <label class="buy-now-info" for="phone"><span>Phone number</span>
-          <input class="modal-input input-text input-phone" type="tel" name="tel" placeholder="Phone number"
-            autocomplete="off">
-          <span class="buy-now-input-svg-phone">
-            <svg width="24" height="18">
-              <use href="../img/symbol-defs.svg#icon-ukraine"></use>
-
-            </svg>
-            <span class="buy-now-phone-maska">+380</span>
-          </span>
-        </label>
-      </div>
-
-      <div class="buy-now-form-field">
-        <label class="buy-now-info" for="phone"><span>Card number</span>
-          <input class="modal-input input-text" type="number" name="credit-number" placeholder="Enter card"
-            autocomplete="off">
-          <span class="buy-now-input-svg-credit-number">
-            <svg width="32" height="21">
-              <use href="../img/symbol-defs.svg#icon-mastercard"></use>
-
-            </svg>
-
-          </span>
-        </label>
-      </div>
-
-      <div class="buy-now-form-field">
-        <label class="buy-now-info" for="phone"><span>Comment</span>
-          <textarea class="modal-form textarea input-text" name="comment" placeholder="Text input"></textarea>
-        </label>
-      </div>
-
-      <button class="modal-btn submit" type="submit">Submit</button>
-    </form>
-  </div>
-</div>
-
-  <div id="modal-thankyou" class="modal">
-    
-    <div id="modal-thank-you" class="modal-thank-you">
-          <button type="button" id="close-modal-thankyou" class="close-button-thank-you">
-          
-            <svg width="16" height="16" class="close-icon-thank-you">
-              <use href="../img/symbol-defs.svg#icon-x-close"></use>
-          
-            </svg>
-          </button>
-      <div class="thank-you-block">
-
-    <h1 class="title thank-you">Thank you!</h1>
-    <p class="thank-you-info">We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.</p>
-  <img class="thank-you-chocolate" src="../img/chocolate-thank-you.png" alt="chocolate-thank-you" style="width:100%;">
-  </div>
-  </div>
-  </div>
 
 
-  <script>
-      // Get elements
-        const openModalBtn = document.getElementById('open-modal-btn');
-        const openModalBtnmobile = document.getElementById('open-modal-btn-mobile');
-        const closeModalBtn = document.getElementById('close-modal-btn');
-        const closeModalThankyou = document.getElementById('close-modal-thankyou');
-        const modalContainer = document.getElementById('modal-container');
-        const modalForm = document.getElementById('modal-form');
-        const modalThankyou = document.getElementById('modal-thankyou');
 
-        // Show modal
-        function showModal() {
-          modalContainer.style.display = 'block';
-        }
 
-        // Hide modal
-        function hideModal() {
-          modalContainer.style.display = 'none';
-        }
 
-        // Handle form submission
-        function handleSubmit(event) {
-          event.preventDefault();
-
-          // Submit form using AJAX or fetch
-          // ...
-
-          // Show thank you modal
-          modalForm.reset();
-          hideModal();
-          modalThankyou.style.display = 'block';
-        }
-
-        // Event listeners
-        openModalBtn.addEventListener('click', showModal);
-        openModalBtnmobile.addEventListener('click', showModal);
-        closeModalBtn.addEventListener('click', hideModal);
-        closeModalThankyou.addEventListener('click', () => {
-          modalThankyou.style.display = 'none';
-        });
-
-  </script>
