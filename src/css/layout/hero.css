@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+    max-width: 1200px;
     min-height: 100vh;
     margin-left: 20px;
     margin-right: 20px;
@@ -102,6 +103,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 }
 
+.scroll-btn:hover,
+.scroll-btn:focus {
+    color: var(--orange-background);
+}
+
 .scroll-svg {
     width: 28px;
     height: 28px;
@@ -112,6 +118,13 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     fill: var(--orange-background);
 
 }
+
+.scroll-svg:hover,
+.scroll-svg:focus {
+    background-color: var(--orange-background);
+    fill:var(--primary-text-light-color);
+}
+
 
 @media (min-width: 768px) {
     .hero-container {
