@@ -8,6 +8,7 @@
     max-width: 287px;
     margin: auto;
     padding: 0px;
+    overflow: hidden;
 }
 
 .ul-our-product {
