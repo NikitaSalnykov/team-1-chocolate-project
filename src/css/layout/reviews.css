@@ -174,3 +174,7 @@
       padding-right: 24px;
     }
   }
+.swiper-pagination2 {
+  position: unset;
+}
+
