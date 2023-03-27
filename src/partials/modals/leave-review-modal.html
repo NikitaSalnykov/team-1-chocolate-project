@@ -1,0 +1,70 @@
+<div class="backdrop-feedback is-hidden" data-modal-feedback>
+    <div class="modal-feedback">
+      <button
+        type="button"
+        class="modal-feedback-close-btn"
+        data-modal-feedback-close
+      >
+        <svg class="modal-feedback-close-btn-icon" width="28" height="28">
+          <use href=""></use>
+        </svg>
+      </button>
+      <form class="modal-feedback-form">
+        <p class="text-modal-feedback">
+          LEAVE A REVIEW ABOUT
+          <span class="text-cl-modal-feedback">OUR CHOCOLATE</span>
+        </p>
+        <div class="modal-feedback-form-input-wrapper">
+          <input
+            type="text"
+            name="user-name-feedback"
+            id="user-name-feedback"
+            placeholder="Name"
+            class="modal-feedback-form-input"
+            required
+            pattern="[a-zA-Z]+"
+            minlength="2"
+          />
+        </div>
+        <div class="modal-feedback-form-input-wrapper">
+          <input
+            type="email"
+            name="user-email-feedback"
+            id="user-email-feedback"
+            placeholder="Email"
+            class="modal-feedback-form-input"
+            required
+          />
+        </div>
+        <div class="modal-feedback-form-input-wrapper">
+          <input
+            type="tel"
+            name="user-phone-feedback"
+            id="user-phone-feedback"
+            placeholder="Phone number"
+            class="modal-feedback-form-input"
+            required
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xx-xxx-xx-xx"
+          />
+          <svg class="modal-feedback-form-input-icon" width="32" height="24">
+            <use href=""></use>
+          </svg>
+        </div>
+        <div class="modal-feedback-form-input-wrapper">
+          <textarea
+            name="user-comment-feedback"
+            id="user-comment-feedback"
+            placeholder="Enter text"
+            class="modal-feedback-form-textarea"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="modal-feedback-submit-btn modal-feedback-submit-btn-style"
+        >
+          <span class="btn-feedback-send">Send</span>
+        </button>
+      </form>
+    </div>
+  </div>
