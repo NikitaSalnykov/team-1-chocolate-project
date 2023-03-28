@@ -13,70 +13,6 @@
     padding: 20px;
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero-section {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-mobile-375@x2.jpg');
-    }
-}
-
-@media (min-width: 375px) {
-    .hero-section {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-tablet-768.jpg');
-    }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 375px),
-screen and (min-resolution: 190dpi) and (min-width: 375px),
-screen and (min-resolution: 2dppx) and (min-width: 375px) {
-    .hero-section {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-tablet-768@x2.jpg');
-    }
-}
-
-@media (min-width: 768px) {
-    .hero-section {
-        padding: 40px;
-        min-height: 890px;
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-desktop-1200.jpg');
-    }
-    .hero-text {
-        width: 484px;
-        font-size: 28px;
-        line-height: calc(34 / 28);
-    }
-
-    .hero-btn {
-        flex-direction: row;
-        flex-basis: 100%;
-        justify-content: space-between;
-    }
-
-    .scroll-btn {
-        font-size: 14px;
-        line-height: calc(18 / 14);
-    }
-
-    .scroll-svg {
-        width: 38px;
-        height: 38px;
-    }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (min-resolution: 190dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .hero-section {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-desktop-1200@x2.jpg');
-    }
-}
-
-@media (min-width: 1200px) {
-    .hero-section {
-        min-height: 600px;
-    }
-}
 .hero-text {
     color: var(--primary-text-light-color);
     font-weight: 500;
@@ -148,8 +84,68 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     fill:var(--primary-text-light-color);
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-mobile-375@x2.jpg');
+    }
+}
+
+@media (min-width: 375px) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-tablet-768.jpg');
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 375px),
+screen and (min-resolution: 190dpi) and (min-width: 375px),
+screen and (min-resolution: 2dppx) and (min-width: 375px) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-tablet-768@x2.jpg');
+    }
+}
 
 @media (min-width: 768px) {
+    .hero-section {
+        padding: 40px;
+        min-height: 890px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-desktop-1200.jpg');
+    }
 
+    .hero-text {
+        width: 484px;
+        font-size: 28px;
+        line-height: calc(34 / 28);
+    }
 
+    .hero-btn {
+        flex-direction: row;
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+
+    .scroll-btn {
+        font-size: 14px;
+        line-height: calc(18 / 14);
+    }
+
+    .scroll-svg {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 190dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-desktop-1200@x2.jpg');
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-section {
+        min-height: 600px;
+    }
 }
