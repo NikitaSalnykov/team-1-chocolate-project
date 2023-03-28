@@ -65,11 +65,11 @@
 .header-logo-icon {
   text-align: center;
   stroke:#FD9222;
-  fill: none;
+  fill: transparent;
 }
 .header-social-icon {
   stroke: #111111;
-  fill: none;
+  fill: transparent;
 }
 .menu-mobile:hover,
 .menu-mobile:focus,
@@ -261,4 +261,5 @@
 }
 .menu-mobile-social-icon {
   stroke: #FFFFFF;
+  fill: transparent;
 }
