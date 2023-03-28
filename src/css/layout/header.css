@@ -270,3 +270,8 @@
   stroke: #FFFFFF;
   fill: transparent;
 }
+
+
+.mob-but-cloce:active{
+  stroke: var(--orange-background);
+}
