@@ -82,3 +82,20 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 }); // end ready
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+const offset = 50 // значение смещения, которое вы хотите применить
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    const blockID = anchor.getAttribute('href').substr(1)
+    const targetElement = document.getElementById(blockID)
+    const topPos = targetElement.getBoundingClientRect().top + window.pageYOffset
+    window.scrollTo({
+      top: topPos - offset,
+      behavior: 'smooth'
+    })
+  })
+}
+

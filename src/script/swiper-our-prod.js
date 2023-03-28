@@ -1,6 +1,6 @@
-//ДЛЯ REVIEWS//
+// ДЛЯ OUR PRODUCT//
 
-const swiper = new Swiper('.swipers', {
+const swiper1 = new Swiper('.swiper-our-prod', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
@@ -12,18 +12,18 @@ const swiper = new Swiper('.swipers', {
     },
     // when window width is >= 768px
     768: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
       spaceBetween: 0
     },
     // when window width is >= 1200px
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 0
     },
   },
   // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination1',
       clickable: true,
     },
   // Navigation arrows
