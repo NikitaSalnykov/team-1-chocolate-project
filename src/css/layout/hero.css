@@ -1,8 +1,14 @@
+#hero .container {
+    width: 100%;
+    max-width: 1200px;
+}
+
 .hero-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: space-around;
+    justify-content: flex-end;
     gap: 34px;
     background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-mobile-375.jpg');
     border-radius: 30px;
@@ -108,6 +114,10 @@ screen and (min-resolution: 2dppx) and (min-width: 375px) {
 
 @media (min-width: 768px) {
     .hero-section {
+            flex-direction: row;
+                flex-wrap: wrap;
+                align-content: flex-end;
+                justify-content: flex-start;
         padding: 40px;
         min-height: 890px;
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-desktop-1200.jpg');
