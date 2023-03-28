@@ -229,6 +229,7 @@ display: flex;
     justify-content: center;
     gap: 16px;
     margin-bottom: 40px;
+    max-height: 200px;
 }
 .buy-now-title {
     margin-bottom: 32px;
@@ -320,7 +321,7 @@ button#close-modal-btn:active,.close-button .close-icon:active,button#close-moda
      overflow-y: scroll;
  }
  .modal-buy-now {
-     max-width: 311px;
+     max-width: 409px;
      margin-left: auto;
      margin-right: auto;
  }
@@ -331,7 +332,10 @@ button#close-modal-btn:active,.close-button .close-icon:active,button#close-moda
 
 
 }
-
+.swiper-slide.ul-top-seller.swiper-slide-active {
+    max-width: 409px;
+    margin-bottom: 25px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) 
 {
 .modal-buy-now {
@@ -340,8 +344,10 @@ button#close-modal-btn:active,.close-button .close-icon:active,button#close-moda
     left: 50%;
     max-width: 609px;
     transform: translate(-50%, -50%) scale(1);
-    margin-top: 60px;
-    margin-bottom: 60px;
+    max-height: 609px;
+    overflow: auto;
+    /*margin-top: 60px;
+    margin-bottom: 60px;*/
 }
 .backdrop {
     overflow-y: scroll;
@@ -388,9 +394,12 @@ button#close-modal-btn:active,.close-button .close-icon:active,button#close-moda
         left: 50%;
         max-width: 609px;
         transform: translate(-50%, -50%) scale(1);
-        margin-top: 60px;
-        margin-bottom: 60px;
+       /* margin-top: 60px;
+        margin-bottom: 60px;*/
+        max-height: 609px;
+            overflow: auto;
     }
+    
         .personal-info-inputs {
             display: flex;
             column-gap: 21px;
