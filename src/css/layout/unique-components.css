@@ -84,7 +84,7 @@
 } */
 
 @media screen and (min-width:768px) and (max-width: 1199px) {
-    .components-item-card.flip-card {
+    .components-item-card.flip-card.nuts {
         order: 3;
     }
 }
@@ -236,11 +236,34 @@
     transform: rotateY(180deg);
 }
 
-.flip-card-back ::-webkit-scrollbar {
+/* Для Webkit-браузеров */
+.components-text-card::-webkit-scrollbar {
     width: 10px;
 }
 
-.flip-card-back::-webkit-scrollbar-thumb {
+.components-text-card::-webkit-scrollbar-track {
+    /*background-color: #f1f1f1;*/
+}
+
+.components-text-card::-webkit-scrollbar-thumb {
     background-color: var(--orange-background);
     border-radius: 10px;
+    /* Закругляем концы полосы прокрутки */
+}
+
+/* Для других браузеров */
+.components-text-card {
+    scrollbar-width: thin;
+}
+
+.components-text-card::-webkit-scrollbar-thumb {
+    background-color: var(--orange-background);
+    border-radius: 10px;
+    /* Закругляем концы полосы прокрутки */
+}
+
+.components-text-card::-moz-scrollbar-thumb {
+    background-color: var(--orange-background);
+    border-radius: 10px;
+    /* Закругляем концы полосы прокрутки */
 }
