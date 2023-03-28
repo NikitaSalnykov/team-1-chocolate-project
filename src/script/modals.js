@@ -37,5 +37,5 @@
         openModalBtnmobile.addEventListener('click', showModal);
         closeModalBtn.addEventListener('click', hideModal);
         closeModalThankyou.addEventListener('click', () => {
-          modalThankyou.style.display = 'none';
+        modalThankyou.style.display = 'none';
         });
