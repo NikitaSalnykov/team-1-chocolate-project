@@ -36,9 +36,6 @@ section.top-sellers {
     /* Закругляем концы полосы прокрутки */
 }
 
-section.section.section-feedback {
-    display: none;
-}
         .top-seller-list {
             list-style: none;
         }
