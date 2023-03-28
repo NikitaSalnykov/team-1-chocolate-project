@@ -1,11 +1,6 @@
-<<<<<<< Updated upstream
 .header {
   padding: 20px 0;
 }
-
-.nav-list {
-=======
-
 .header-container-mobile {
   display: flex;
   width: 100%;
@@ -91,20 +86,21 @@
   line-height: 1.19;
   letter-spacing: -0.03em;
   color: #111111;
-  margin-right: 7px;
+  margin-right: calc(6px + (7 - 6) * ((100vw - 768px) / (1199 - 768)));
 }
 .logo-choc-header {
   font-style: normal;
 }
 .header-logo-icon {
-  width: calc(18px + (20 - 18) * ((100vw - 768px) / (1199 - 768)));
-  height: calc(18px + (20 - 18) * ((100vw - 768px) / (1199 - 768)));
+  width: calc(18px + (26 - 18) * ((100vw - 768px) / (1199 - 768)));
+  height: calc(18px + (26 - 18) * ((100vw - 768px) / (1199 - 768)));
+  margin-top: 4px;
 }
 .nav-head {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color:var(--primary-text-color);
+  color: #111111;
   transition: color var(--transition)
 }
 .nav-head:hover,
@@ -177,7 +173,6 @@
   right: calc(28px + (41 - 28) * ((100vw - 375px) / (768 - 375)));
   padding: 0;
   border:1px solid rgba(0, 0, 0, 0.1);
->>>>>>> Stashed changes
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -192,5 +187,5 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #747bff;
+  color: #FD9222;
 }
