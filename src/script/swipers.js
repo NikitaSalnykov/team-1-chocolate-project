@@ -1,4 +1,4 @@
-const swiper2 = new Swiper('.swiper-reviews', {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
@@ -10,7 +10,7 @@ const swiper2 = new Swiper('.swiper-reviews', {
     },
     // when window width is >= 768px
     768: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
       spaceBetween: 0
     },
     // when window width is >= 1200px
@@ -21,7 +21,7 @@ const swiper2 = new Swiper('.swiper-reviews', {
   },
   // If we need pagination
     pagination: {
-      el: '.swiper-pagination2',
+      el: '.swiper-pagination',
       clickable: true,
     },
   // Navigation arrows

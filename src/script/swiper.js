@@ -1,4 +1,6 @@
-const swiper = new Swiper('.swiper', {
+//ДЛЯ REVIEWS//
+
+const swiper = new Swiper('.swipers', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
@@ -10,12 +12,12 @@ const swiper = new Swiper('.swiper', {
     },
     // when window width is >= 768px
     768: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
       spaceBetween: 0
     },
     // when window width is >= 1200px
     1200: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 0
     },
   },

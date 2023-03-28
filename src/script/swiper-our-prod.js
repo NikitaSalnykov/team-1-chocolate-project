@@ -1,3 +1,5 @@
+// ДЛЯ OUR PRODUCT//
+
 const swiper1 = new Swiper('.swiper-our-prod', {
   // Optional parameters
   direction: 'horizontal',
