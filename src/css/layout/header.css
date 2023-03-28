@@ -1,6 +1,9 @@
 .header {
   padding: 20px 0;
 }
+.header a {
+  outline: none;
+}
 .header-container-mobile {
   display: flex;
   width: 100%;
@@ -64,19 +67,18 @@
 }
 .header-logo-icon {
   text-align: center;
-  stroke:#FD9222;
+  stroke:var(--orange-background);
   fill: transparent;
 }
 .header-social-icon {
   stroke: #111111;
   fill: transparent;
 }
-.menu-mobile:hover,
-.menu-mobile:focus,
-.header-social-icon:hover,
-.header-social-icon:focus {
-  stroke: #FD9222;
-  color: #FD9222;
+.change:hover svg use,
+.change:focus svg use,
+.header-social-li-inst a:focus svg use,
+.header-social-li-inst a:hover svg use {
+  stroke: var(--orange-background);
 }
 /*================================== header ==========================================*/
 .header-logo {
@@ -105,7 +107,7 @@
 }
 .nav-head:hover,
 .nav-head:focus {
-  color:#FD9222
+  color:var(--orange-background)
 }
 .page-nav {
   position: relative;
@@ -187,7 +189,7 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #FD9222;
+  color: var(--orange-background);
 }
 .js-menu-container {
   position: relative;
@@ -221,6 +223,11 @@
   line-height: 1.14;
   color: #FFFFFF;
 }
+.menu-mobile:focus,
+.menu-mobile:hover{
+  color: var(--orange-background);
+}
+
 @media (min-width: 1200px) {
   .mobil-menu {
      display: none;
