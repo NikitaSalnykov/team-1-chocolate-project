@@ -42,7 +42,12 @@
 }
 .footer-social-media-icon a svg{
     display: block;
-    stroke:var(--primary-text-light-color)
+    stroke:var(--primary-text-light-color);
+    fill: transparent;
+}
+.footer-social-media-icon a svg:hover,
+.footer-social-media-icon a svg:focus{
+    stroke: var(--orange-background);
 }
 .footer-section-list-item a{
     color: var(--primary-text-light-color);
