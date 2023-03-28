@@ -1,6 +1,44 @@
 section.top-sellers {
     margin-bottom: 72px;
 }
+
+
+
+/* Для Webkit-браузеров */
+.modal-buy-now::-webkit-scrollbar {
+    width: 10px;
+}
+
+.modal-buy-now::-webkit-scrollbar-track {
+    /*background-color: #f1f1f1;*/
+}
+
+.modal-buy-now::-webkit-scrollbar-thumb {
+    background-color: var(--orange-background);
+    border-radius: 10px;
+    /* Закругляем концы полосы прокрутки */
+}
+
+/* Для других браузеров */
+.modal-buy-now {
+    scrollbar-width: thin;
+}
+
+.modal-buy-now::-webkit-scrollbar-thumb {
+    background-color: var(--orange-background);
+    border-radius: 10px;
+    /* Закругляем концы полосы прокрутки */
+}
+
+.modal-buy-now::-moz-scrollbar-thumb {
+    background-color: var(--orange-background);
+    border-radius: 10px;
+    /* Закругляем концы полосы прокрутки */
+}
+
+section.section.section-feedback {
+    display: none;
+}
         .top-seller-list {
             list-style: none;
         }

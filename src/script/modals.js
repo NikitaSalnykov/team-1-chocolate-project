@@ -1,6 +1,6 @@
       // Get elements
         const openModalBtn = document.getElementById('open-modal-btn');
-        
+        const openModalBtnhero = document.getElementById('hero-btn-bue');
         const openModalBtnmobile = document.getElementById('open-modal-btn-mobile');
         const closeModalBtn = document.getElementById('close-modal-btn');
         const closeModalThankyou = document.getElementById('close-modal-thankyou');
@@ -33,6 +33,7 @@
 
         // Event listeners
         openModalBtn.addEventListener('click', showModal);
+        openModalBtnhero.addEventListener('click', showModal);
         openModalBtnmobile.addEventListener('click', showModal);
         closeModalBtn.addEventListener('click', hideModal);
         closeModalThankyou.addEventListener('click', () => {
