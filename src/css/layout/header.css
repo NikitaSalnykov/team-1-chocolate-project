@@ -1,4 +1,181 @@
 
+.header {
+  padding: 20px 0;
+}
+.header-container-mobile {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1199px) {
+  .header-container-mobile {
+      display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-container {
+      display: flex;
+      align-items: center;
+  }
+}
+.header {
+  padding-bottom: calc(19px + (31 - 19) * ((100vw - 768px) / (1199 - 768)));
+  padding-top: calc(25px + (31 - 25) * ((100vw - 768px) / (1199 - 768)));
+  padding-left: calc(20px + (32 - 20) * ((100vw - 768px) / (1199 - 768)));;
+  padding-right: calc(20px + (32 - 20) * ((100vw - 768px) / (1199 - 768)));;
+}
+.page-nav, 
+.header-social,
+.menu-nav {
+  display: flex;
+  align-items: center; 
+}
+@media (max-width: 1199px) {
+  .header-container {
+      display: none;
+  }
+}
+.menu-nav {
+  gap: 24px;
+}
+@media (min-width: 768px) and (max-width: 1199px){
+  .menu-logo {
+      margin-right: calc(24px + (190 - 24) * ((100vw - 768px) / (1199 - 768)));
+      }
+}
+@media (min-width: 1200px) {
+  .header-social {
+      margin-left: auto;
+  }
+  .menu-logo {
+      margin-right: 190px;
+  }
+}
+.header-social-li-inst {
+  margin-right: 21px;
+}
+.menu-logo {
+  display: flex;
+  align-items: center;
+}
+.header-logo-icon {
+  text-align: center;
+  stroke:#FD9222;
+  fill: none;
+}
+.header-social-icon {
+  stroke: #111111;
+  fill: none;
+}
+.menu-mobile:hover,
+.menu-mobile:focus,
+.header-social-icon:hover,
+.header-social-icon:focus {
+  stroke: #FD9222;
+  color: #FD9222;
+}
+/*================================== header ==========================================*/
+.header-logo {
+  font-style: italic;
+  font-weight: 700;
+  font-size: calc(14px + (18 - 14) * ((100vw - 768px) / (1199 - 768)));
+  line-height: 1.19;
+  letter-spacing: -0.03em;
+  color: #111111;
+  margin-right: calc(6px + (7 - 6) * ((100vw - 768px) / (1199 - 768)));
+}
+.logo-choc-header {
+  font-style: normal;
+}
+.header-logo-icon {
+  width: calc(18px + (26 - 18) * ((100vw - 768px) / (1199 - 768)));
+  height: calc(18px + (26 - 18) * ((100vw - 768px) / (1199 - 768)));
+  margin-top: 4px;
+}
+.nav-head {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111111;
+  transition: color var(--transition)
+}
+.nav-head:hover,
+.nav-head:focus {
+  color:#FD9222
+}
+.page-nav {
+  position: relative;
+}
+.menu-item {
+  position: relative;
+}
+.menu-line {
+  position: relative;
+}
+.header-burger {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.mobile-menu-burger-icon {
+  stroke: #111111;
+  width:calc(32px + (35 - 32) * ((100vw - 768px) / (1199 - 768)));
+  height:calc(22px + (24 - 22) * ((100vw - 768px) / (1199 - 768)));
+}
+/*============================= mobil-menu ==========================================*/
+.js-menu-container {
+  position: relative;
+  width: calc(220px + (290 - 220) * ((100vw - 375px) / (768 - 375)));
+  height: 100%;
+  /* height: calc(812px + (1024 - 812) * ((100vw - 375px) / (768 - 375))); */
+  padding-left: calc(21px + (36 - 21) * ((100vw - 375px) / (768 - 375)));
+  padding-top: calc(136px + (156 - 136) * ((100vw - 375px) / (768 - 375)));
+  padding-right: 36px;
+  padding-bottom: 24px;
+  z-index: 10;
+  overflow-y: scroll;
+  background: #1E1823;
+}  
+.mobil-menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 1s;
+}
+
+.menu-mobile {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #FFFFFF;
+}
+@media (min-width: 1200px) {
+  .mobil-menu {
+     display: none;
+  }
+}
+.mobil-menu.is-open {
+  transform: translateX(0);
+}
+.js-close-menu {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: calc(28px + (33 - 28) * ((100vw - 375px) / (768 - 375)));
+  right: calc(28px + (41 - 28) * ((100vw - 375px) / (768 - 375)));
+  padding: 0;
+  border:1px solid rgba(0, 0, 0, 0.1);
+
+
 .header-container-mobile {
   display: flex;
   width: 100%;
@@ -145,6 +322,9 @@
   transition: transform 1s;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: #FD9222;
 .menu-mobile {
   font-style: normal;
   font-weight: 500;
@@ -195,5 +375,6 @@
 }
 .menu-icon {
   margin-top: calc(263px + (447 - 263) * ((100vw - 375px) / (768 - 375)));
+
 }
 /*============================= / mobil-menu ==========================================*/
