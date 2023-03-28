@@ -1,4 +1,4 @@
-const swiper3 = new Swiper('.swipers', {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
@@ -21,7 +21,7 @@ const swiper3 = new Swiper('.swipers', {
   },
   // If we need pagination
     pagination: {
-      el: '.swiper-pagination3',
+      el: '.swiper-pagination',
       clickable: true,
     },
   // Navigation arrows

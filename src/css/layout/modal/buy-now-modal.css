@@ -32,6 +32,7 @@
      border: 1px solid #ccc;
     margin-bottom: 14px;
     margin-top: 4px;
+    overflow: hidden;
  }
 
  .modal-btn.submit {
