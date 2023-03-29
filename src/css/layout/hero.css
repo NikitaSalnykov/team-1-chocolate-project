@@ -138,7 +138,7 @@ screen and (min-resolution: 2dppx) and (min-width: 375px) {
     }
 
     .hero-text {
-        width: 484px;
+        max-width: 484px;
         font-size: 28px;
         line-height: calc(34 / 28);
     }
