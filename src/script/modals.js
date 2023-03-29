@@ -48,6 +48,11 @@ function hideModal() {
         openModalBtnhero.addEventListener('click', showModal);
         openModalBtnmobile.addEventListener('click', showModal);
         closeModalBtn.addEventListener('click', hideModal);
+
+        closeModalThankyou.addEventListener('click', () => {
+        modalThankyou.style.display = 'none';
+
        closeModalThankyou.addEventListener('click', () => {
           modalThankyou.style.display = 'block';
+
         });
