@@ -143,7 +143,7 @@
             <h2 class="hero-text">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
             <div class="hero-btn">
                 <div class="main-how-btn">
-                <button class="main-btn js-open-modal" data-modal="2" type="button">Buy now</button>
+                <button class="main-btn" type="button" id="hero-btn-bue">Buy now</button>
                 <a class="how-btn" href="#how-its-made">How it’s made</a>
                 </div>
                 <a class="scroll-btn" href="#footer">
@@ -866,7 +866,7 @@
     </div>
 </div>
 
-
+<script src="../../script/modals.js"></script>
     <div id="modal-thankyou" class="modal">
 
     <div id="modal-thank-you" class="modal-thank-you">
@@ -891,7 +891,7 @@
     </div>
 </div>
     <div class="leave-background-color">
-    <div class="modal-leave modal" data-modal="2">
+    <div class="modal-leave" id="modal-leave">
         <form id="modal-form" class="modal-form" onsubmit="handleSubmit(event)">
             <h2 class="title title-for-leave">LEAVE A REVIEW <span class="title title-span2">ABOUT</span> <span
                     class="title-exception">OUR CHOCOLATE</span></h2>
@@ -969,6 +969,7 @@
 
 <div class="modal-overlay js-overlay-modal"></div>
 
+<script src="./script/modal.js"></script>
   </main>
   <!-- Footer -->
      <footer class="footer" id="footer">
