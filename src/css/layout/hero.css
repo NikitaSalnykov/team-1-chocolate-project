@@ -25,7 +25,7 @@
     font-size: 20px;
     line-height: calc(24/20);
     letter-spacing: -0.03em;
-    width: 290px;
+    max-width: 290px;
 }
 
 .hero-btn {
@@ -88,6 +88,15 @@
 .scroll-svg:focus {
     background-color: var(--orange-background);
     fill:var(--primary-text-light-color);
+}
+
+@media screen and (max-width: 370px) {
+    .main-how-btn {
+        display: flex;
+        gap: 34px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -159,3 +168,4 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         min-height: 600px;
     }
 }
+
