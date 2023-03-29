@@ -238,7 +238,7 @@
 
 /* Для Webkit-браузеров */
 .components-text-card::-webkit-scrollbar {
-    width: 10px;
+    width: 2px;
 }
 
 .components-text-card::-webkit-scrollbar-track {
@@ -248,6 +248,7 @@
 .components-text-card::-webkit-scrollbar-thumb {
     background-color: var(--orange-background);
     border-radius: 10px;
+
     /* Закругляем концы полосы прокрутки */
 }
 

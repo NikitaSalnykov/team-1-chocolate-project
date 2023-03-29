@@ -2,6 +2,7 @@ const toggleBtn = document.getElementById("toggle-btn-send");
 const modal = document.getElementById("modal-thankyou");
 const lastmodal = document.getElementById("modal-leave");
 const closeBtn = modal.querySelector(".close-button-thank-you");
+
 // заполни поля Name + Email + phone
 const nameInput = document.getElementById("name-leave");
 const emailInput = document.getElementById("email-leave");
@@ -20,6 +21,7 @@ toggleBtn.addEventListener("click", (e) => {
     lastmodal.style.display = "none";
     modal.style.display = "block";
   }  
+
 });
 
 closeBtn.addEventListener("click", () => {
@@ -27,7 +29,9 @@ closeBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("click", (event) => {
+
   if (event.target === modal ) {
+
     modal.style.display = "none";
   }
 });

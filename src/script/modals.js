@@ -54,4 +54,5 @@ function hideModal() {
 
        closeModalThankyou.addEventListener('click', () => {
           modalThankyou.style.display = 'block';
+
         });
