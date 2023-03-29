@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 }); // end ready
 
-const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelectorAll('a[href*="#"]');
 
 const offset = 50 // значение смещения, которое вы хотите применить
 for (let anchor of anchors) {
