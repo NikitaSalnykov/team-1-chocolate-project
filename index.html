@@ -143,7 +143,7 @@
             <h2 class="hero-text">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
             <div class="hero-btn">
                 <div class="main-how-btn">
-                <button class="main-btn" type="button" id="hero-btn-bue">Buy now</button>
+                <button class="main-btn js-open-modal" data-modal="2" type="button">Buy now</button>
                 <a class="how-btn" href="#how-its-made">How it’s made</a>
                 </div>
                 <a class="scroll-btn" href="#footer">
@@ -737,9 +737,9 @@
         </div>
     </div>
 </section>
-    <div id="modal-container" class="modal-topsell">
+    <div id="modal-container" class="modal-topsell modal" data-modal="2">
     <div id="modal" class="modal-buy-now">
-        <button type="button" id="close-modal-btn" class="close-button">
+        <button type="button" id="close-modal-btn" class="close-button js-modal-close">
 
             <svg width="12" height="12" class="close-icon">
                 <use href="/team-1-chocolate-project/assets/symbol-defs-7a63737f.svg#icon-x-close"></use>
@@ -866,7 +866,6 @@
     </div>
 </div>
 
-<script></script>
     <div id="modal-thankyou" class="modal">
 
     <div id="modal-thank-you" class="modal-thank-you">
@@ -969,108 +968,6 @@
 
 <div class="modal-overlay js-overlay-modal"></div>
 
-<script>!(function (e) {
-  'function' != typeof e.matches &&
-    (e.matches =
-      e.msMatchesSelector ||
-      e.mozMatchesSelector ||
-      e.webkitMatchesSelector ||
-      function (e) {
-        for (
-          var t = this,
-            o = (t.document || t.ownerDocument).querySelectorAll(e),
-            n = 0;
-          o[n] && o[n] !== t;
-
-        )
-          ++n;
-        return Boolean(o[n]);
-      }),
-    'function' != typeof e.closest &&
-      (e.closest = function (e) {
-        for (var t = this; t && 1 === t.nodeType; ) {
-          if (t.matches(e)) return t;
-          t = t.parentNode;
-        }
-        return null;
-      });
-})(window.Element.prototype);
-
-document.addEventListener('DOMContentLoaded', function () {
-  /* Записываем в переменные массив элементов-кнопок и подложку.
-      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
-  var modalButtons = document.querySelectorAll('.js-open-modal'),
-    overlay = document.querySelector('.js-overlay-modal'),
-    closeButtons = document.querySelectorAll('.js-modal-close');
-
-  /* Перебираем массив кнопок */
-  modalButtons.forEach(function (item) {
-    /* Назначаем каждой кнопке обработчик клика */
-    item.addEventListener('click', function (e) {
-      /* Предотвращаем стандартное действие элемента. Так как кнопку разные
-            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
-            Нужно подстраховаться. */
-      e.preventDefault();
-
-      /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
-            и будем искать модальное окно с таким же атрибутом. */
-      var modalId = this.getAttribute('data-modal'),
-        modalElem = document.querySelector(
-          '.modal[data-modal="' + modalId + '"]'
-        );
-
-      /* После того как нашли нужное модальное окно, добавим классы
-            подложке и окну чтобы показать их. */
-      modalElem.classList.add('active');
-      overlay.classList.add('active');
-    }); // end click
-  }); // end foreach
-
-  closeButtons.forEach(function (item) {
-    item.addEventListener('click', function (e) {
-      var parentModal = this.closest('.modal');
-
-      parentModal.classList.remove('active');
-      overlay.classList.remove('active');
-    });
-  }); // end foreach
-
-  document.body.addEventListener(
-    'keyup',
-    function (e) {
-      var key = e.keyCode;
-
-      if (key == 27) {
-        document.querySelector('.modal.active').classList.remove('active');
-        document.querySelector('.overlay').classList.remove('active');
-      }
-    },
-    false
-  );
-
-  overlay.addEventListener('click', function () {
-    document.querySelector('.modal.active').classList.remove('active');
-    this.classList.remove('active');
-  });
-}); // end ready
-
-const anchors = document.querySelectorAll('a[href*="#"]')
-
-const offset = 50 // значение смещения, которое вы хотите применить
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    const blockID = anchor.getAttribute('href').substr(1)
-    const targetElement = document.getElementById(blockID)
-    const topPos = targetElement.getBoundingClientRect().top + window.pageYOffset
-    window.scrollTo({
-      top: topPos - offset,
-      behavior: 'smooth'
-    })
-  })
-}
-
-</script>
   </main>
   <!-- Footer -->
      <footer class="footer" id="footer">
