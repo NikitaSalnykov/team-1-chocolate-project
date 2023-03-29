@@ -12,9 +12,9 @@ const phoneInput = document.getElementById("tel-leave");
 toggleBtn.addEventListener("click", (e) => {
   e.preventDefault()
 
-  if (!nameInput.value || nameInput.checkValidity()) { 
+  if (!nameInput.value) { 
     alert("Name is empty");
-  } else if (!emailInput.value || emailInput.checkValidity()) {
+  } else if (!emailInput.value) {
     alert("Email is empty");
   } else if (!phoneInput.value) {
     alert("Phone is empty");
