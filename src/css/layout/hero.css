@@ -69,9 +69,8 @@
     letter-spacing: -0.03em;
 }
 
-.scroll-btn:hover,
-.scroll-btn:focus {
-    color: var(--orange-background);
+.scroll-text {
+    transition: var(--transition);
 }
 
 .scroll-svg {
@@ -82,13 +81,18 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     fill: var(--orange-background);
-
+    transition: var(--transition);
 }
 
-.scroll-svg:hover,
-.scroll-svg:focus {
+.scroll-btn:hover .scroll-text,
+.scroll-btn:focus .scroll-text {
+    color: var(--orange-background);
+}
+
+.scroll-btn:hover .scroll-svg,
+.scroll-btn:focus .scroll-svg {
     background-color: var(--orange-background);
-    fill:var(--primary-text-light-color);
+    fill: var(--primary-text-light-color);
 }
 
 @media screen and (max-width: 370px) {
