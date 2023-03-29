@@ -4,3 +4,6 @@ import './modal';
 import './mobile-menu';
 import './modal-for-mobile-menu';
 import './swipers';
+import './modal-leave';
+import './thankyou';
+import './modals';

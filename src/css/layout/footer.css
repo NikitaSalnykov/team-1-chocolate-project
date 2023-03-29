@@ -1,4 +1,3 @@
-
 .footer{
     padding-top: 32px;
     padding-bottom: 32px;
@@ -6,6 +5,9 @@
     background-color: var(--secondary-dark-color);
     color: var(--primary-text-light-color);
     font-weight: 500;
+}
+.footer a{
+    outline: none;
 }
 .footer-top-part{
     padding-bottom: 32px;
@@ -36,17 +38,31 @@
     color: var(--primary-text-light-color);
     font-style: normal;
 }
+.footer-address a:focus,
+.footer-address a:hover{
+    color: var(--orange-background);
+}
 .footer-social-media{
     display: flex;
     gap: 14px;
 }
 .footer-social-media-icon a svg{
     display: block;
-    stroke:var(--primary-text-light-color)
+    stroke:var(--primary-text-light-color);
+    fill: transparent;
 }
+.footer-social-media-icon a svg:hover,
+.footer-social-media-icon a:focus svg use{
+    stroke: var(--orange-background);
+}
+
 .footer-section-list-item a{
     color: var(--primary-text-light-color);
     line-height: calc(16/14);
+}
+.footer-section-list-item a:hover,
+.footer-section-list-item a:focus{
+    color: var(--orange-background);
 }
 .footer-jump-to-sections{
     display: flex;

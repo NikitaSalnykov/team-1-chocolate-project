@@ -66,13 +66,14 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  transition: background-color, border, color var(--transition);
+  transition: border, background-color var(--transition);
+  background-color: transparent;
 }
 .feedback-btn:hover,
 .feedback-btn:focus {
-  color: var(--primary-text-light-color);
   border: 1px solid #FD9222;
   background-color: #FD9222;
+  color: white;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .section-feedback {
