@@ -84,7 +84,7 @@
 } */
 
 @media screen and (min-width:768px) and (max-width: 1199px) {
-    .components-item-card.nuts {
+    .components-item-card.flip-card.nuts {
         order: 3;
     }
 }
@@ -156,16 +156,25 @@
     margin-bottom: 14px;
 }
 
+.components-button.first:hover {
+    background-color: var(--pressed-state-orange);
+    color: var(--orange-background);
+}
+
 .components-button.second {
     background-color: var(--primary-text-light-color);
     border: 1px solid #FD9222;
     margin-bottom: 14px;
 }
 
-.components-text-card {
+.components-button.second:hover {
+    background-color: var(--orange-background);
+    color: var(--primary-text-light-color);
+}
 
-    /* width: 279px;
-    height: 146px; */
+.components-text-card {
+    height: 146px;
+    overflow: scroll;
 }
 
 /* Flip card */
@@ -225,4 +234,36 @@
     height: 270px;
     border-radius: 15px;
     transform: rotateY(180deg);
+}
+
+/* Для Webkit-браузеров */
+.components-text-card::-webkit-scrollbar {
+    width: 10px;
+}
+
+.components-text-card::-webkit-scrollbar-track {
+    /*background-color: #f1f1f1;*/
+}
+
+.components-text-card::-webkit-scrollbar-thumb {
+    background-color: var(--orange-background);
+    border-radius: 10px;
+    /* Закругляем концы полосы прокрутки */
+}
+
+/* Для других браузеров */
+.components-text-card {
+    scrollbar-width: thin;
+}
+
+.components-text-card::-webkit-scrollbar-thumb {
+    background-color: var(--orange-background);
+    border-radius: 10px;
+    /* Закругляем концы полосы прокрутки */
+}
+
+.components-text-card::-moz-scrollbar-thumb {
+    background-color: var(--orange-background);
+    border-radius: 10px;
+    /* Закругляем концы полосы прокрутки */
 }

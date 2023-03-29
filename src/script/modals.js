@@ -9,14 +9,26 @@
         const modalThankyou = document.getElementById('modal-thankyou');
 
         // Show modal
-        function showModal() {
-          modalContainer.style.display = 'block';
+function showModal() {
+  modalContainer.style.opacity = '0'; // Додаємо першу анімацію
+  modalContainer.style.display = 'block';
+  setTimeout(() => {
+    modalContainer.style.opacity = '1'; // Додаємо другу анімацію
+  }, 10);
+}
+        function showModalThank() {
+          modalThankyou.style.display = 'block';
         }
 
         // Hide modal
-        function hideModal() {
-          modalContainer.style.display = 'none';
-        }
+function hideModal() {
+  modalContainer.style.opacity = 0;
+  setTimeout(() => {
+    modalContainer.style.display = 'none';
+    modalContainer.style.opacity = 1;
+  }, 500); // тривалість анімації + затримка
+}
+        
 
         // Handle form submission
         function handleSubmit(event) {
@@ -26,7 +38,7 @@
           // ...
 
           // Show thank you modal
-          modalForm.reset();
+          //modalForm.reset();
           hideModal();
           modalThankyou.style.display = 'block';
         }
@@ -36,6 +48,10 @@
         openModalBtnhero.addEventListener('click', showModal);
         openModalBtnmobile.addEventListener('click', showModal);
         closeModalBtn.addEventListener('click', hideModal);
+
         closeModalThankyou.addEventListener('click', () => {
         modalThankyou.style.display = 'none';
+
+       closeModalThankyou.addEventListener('click', () => {
+          modalThankyou.style.display = 'block';
         });
