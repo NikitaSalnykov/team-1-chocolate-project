@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   
   <script type="module" crossorigin src="/team-1-chocolate-project/assets/index-35e87f00.js"></script>
-  <link rel="stylesheet" href="/team-1-chocolate-project/assets/index-dc8e81a3.css">
+  <link rel="stylesheet" href="/team-1-chocolate-project/assets/index-bc72ca2e.css">
 </head>
 
 <body>
@@ -509,7 +509,7 @@
         <div class="swiper-pagination1"></div>
     </div>
 </section>
-    <section class="section">
+    <section class="section" id="top-sellers">
     <div class="container">
 
         <h2 class="title top-seller-title"><span class="title-exception">Top</span> Sellers</h2>
@@ -542,7 +542,7 @@
                 Cacao.
                 Cacao has been around for
                 thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-            <button id="open-modal-btn" class="main-btn top-seller-button">Buy now</button>
+            <button id="js-open-modal-leave" class="main-btn top-seller-button">Buy now</button>
         </div>
 
     </div>
@@ -678,7 +678,8 @@
 
             </svg>
         </button>
-        <form id="modal-form" class="modal-form" onsubmit="handleSubmit(event)">
+        <form id="modal-form" class="modal-form" onsubmit="handleSubmit(event)" style="
+    overflow:hidden">
             <h1 class="title buy-now-title"><span class="title-exception">Buy</span> Now</h1>
 
             <ul class="modal-buy-now-list-of-products">
@@ -704,7 +705,7 @@
                 </li>
 
             </ul>
-            <div class="swiper swiper-top-seller ">
+            <div class="swipers swiper-top-seller ">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper wrapper-top-seller">
                     <!-- Slides -->
@@ -732,12 +733,9 @@
                             <div class="modal-buy-now-gram  mobile">100 g</div>
                         </div>
                     </div>
-                    ...
                 </div>
                 <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-
+                <div class="swiper-pagination pagination-taras"></div>
 
                 <div class="swiper-scrollbar swiper-scrollbar-top-seller"></div>
             </div>
