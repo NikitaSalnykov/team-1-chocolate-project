@@ -1,0 +1,123 @@
+<div id="modal-container" class="modal-topsell">
+    <div id="modal" class="modal-buy-now">
+        <button type="button" id="close-modal-btn" class="close-button">
+
+            <svg width="12" height="12" class="close-icon">
+                <use href="/img/symbol-defs.svg#icon-x-close"></use>
+
+            </svg>
+        </button>
+        <form id="modal-form" class="modal-form" onsubmit="handleSubmit(event)" style="
+    overflow:hidden">
+            <h1 class="title buy-now-title"><span class="title-exception">Buy</span> Now</h1>
+
+            <ul class="modal-buy-now-list-of-products">
+                <li class="modal-buy-now-item">
+                    <img srcset="../img/kisspng-chocolate-bar-kinder.jpg 1x, /img/kisspng-chocolate-bar-kinder@2x.jpg 2x"
+                        src="/img/kisspng-chocolate-bar-kinder.jpg" alt="Mark Guerrero Product Designer" width="120">
+                    <div class="modal-buy-now-gram">100 g</div>
+                </li>
+
+
+                <li class="modal-buy-now-item">
+                    <img srcset="/img/kisspng-chocolate-bar-praline-kinder-chocolate.jpg 1x, /img/kisspng-chocolate-bar-praline-kinder-chocolate@2x.jpg 2x"
+                        src="/img/kisspng-chocolate-bar-praline-kinder-chocolate.jpg"
+                        alt="kisspng-chocolate-bar-kinder" width="120">
+                    <div class="modal-buy-now-gram">200 g</div>
+                </li>
+
+                <li class="modal-buy-now-item">
+                    <img srcset="/img/transparent-chocolate-bar-dark-chocolate.jpg 1x, /img/transparent-chocolate-bar-dark-chocolate@2x.jpg 2x"
+                        src="/img/transparent-chocolate-bar-dark-chocolate.jpg"
+                        alt="transparent-chocolate-bar-dark-chocolate" width="120">
+                    <div class="modal-buy-now-gram">300 g</div>
+                </li>
+
+            </ul>
+            <div class="swipers swiper-top-seller ">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper wrapper-top-seller">
+                    <!-- Slides -->
+                    <div class="swiper-slide ul-top-seller swiper-slide-for-taras">
+                        <div class="li-top-seller">
+                            <img srcset="/img/kisspng-chocolate-bar-kinder.jpg 1x, /img/kisspng-chocolate-bar-kinder@2x.jpg 2x"
+                                src="/img/kisspng-chocolate-bar-kinder.jpg" alt="kisspng-chocolate-bar-kinder"
+                                width="360">
+                            <div class="modal-buy-now-gram  mobile">100 g</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ul-top-seller swiper-slide-for-taras">
+                        <div class="li-top-seller">
+                            <img srcset="/img/kisspng-chocolate-bar-praline-kinder-chocolate.jpg 1x, /img/kisspng-chocolate-bar-praline-kinder-chocolate@2x.jpg 2x"
+                                src="/img/kisspng-chocolate-bar-praline-kinder-chocolate.jpg"
+                                alt="kisspng-chocolate-bar-praline-kinder-chocolate" width="360">
+                            <div class="modal-buy-now-gram mobile">100 g</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ul-top-seller swiper-slide-for-taras">
+                        <div class="li-top-seller">
+                            <img srcset="/img/transparent-chocolate-bar-dark-chocolate.jpg 1x, /img/transparent-chocolate-bar-dark-chocolate@2x.jpg 2x"
+                                src="/img/transparent-chocolate-bar-dark-chocolate.jpg"
+                                alt="transparent-chocolate-bar-dark-chocolate" width="360">
+                            <div class="modal-buy-now-gram  mobile">100 g</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination pagination-taras"></div>
+
+                <div class="swiper-scrollbar swiper-scrollbar-top-seller"></div>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="personal-info"><span>Personal information</span>
+                    <div class="personal-info-inputs">
+                        <input class="modal-input name" type="text" id="name" name="name" placeholder="Name" pattern="[a-zA-Zа-яА-Я]+" minlength="2" required>
+                        <input class="modal-input surname" type="text" id="surname" name="surname" placeholder="Surname" pattern="[a-zA-Zа-яА-Я]+" minlength="2" 
+                            required>
+                    </div>
+                </label>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="email">Email:
+                    <input class="modal-input surname" type="email" id="email" name="email"
+                        placeholder="Enter Your email" required>
+                </label>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="phone"><span>Phone number</span>
+                    <input class="modal-input input-text input-phone" type="tel" name="tel" placeholder="Phone number"
+                        required
+        pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" autocomplete="off">
+                    <span class="buy-now-input-svg-phone">
+                        <svg width="24" height="18">
+                            <use href="/img/symbol-defs.svg#icon-ukraine"></use>
+
+                        </svg>
+                        <span class="buy-now-phone-maska">+380</span>
+                    </span>
+                </label>
+            </div>
+
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="phone"><span>Card number</span>
+                    <input class="modal-input input-text" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" required>
+                    <span class="buy-now-input-svg-credit-number">
+                        <svg width="32" height="21">
+                            <use href="/img/symbol-defs.svg#icon-mastercard"></use>
+
+                        </svg>
+
+                    </span>
+                </label>
+            </div>
+
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="phone"><span>Comment</span>
+                    <textarea class="modal-form textarea input-text" name="comment" placeholder="Text input"></textarea>
+                </label>
+            </div>
+
+            <button class="modal-btn submit" type="submit">Submit</button>
+        </form>
+    </div>
+</div>

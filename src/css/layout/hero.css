@@ -1,0 +1,171 @@
+#hero .container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-end;
+    gap: 34px;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-mobile-375.jpg');
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 620px;
+    padding: 20px;
+}
+
+.hero-text {
+    color: var(--primary-text-light-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: -0.03em;
+    max-width: 290px;
+}
+
+.hero-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.main-how-btn {
+    display: flex;
+    gap: 14px;
+}
+
+.how-btn {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 28px;
+    padding-left: 28px;
+    border-radius: 100px;
+    color: var(--primary-text-light-color);
+    font-weight: 600;
+    line-height: calc(17/14);
+    border: 1px solid currentColor;
+}
+
+.how-btn:hover,
+.how-btn:focus {
+    color: var(--orange-background);
+}
+
+.scroll-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--primary-text-light-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: -0.03em;
+}
+
+.scroll-btn:hover,
+.scroll-btn:focus {
+    color: var(--orange-background);
+}
+
+.scroll-svg {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    background-color: var(--primary-text-light-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    fill: var(--orange-background);
+
+}
+
+.scroll-svg:hover,
+.scroll-svg:focus {
+    background-color: var(--orange-background);
+    fill:var(--primary-text-light-color);
+}
+
+@media screen and (max-width: 370px) {
+    .main-how-btn {
+        display: flex;
+        gap: 34px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-mobile-375@x2.jpg');
+    }
+}
+
+@media (min-width: 375px) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-tablet-768.jpg');
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 375px),
+screen and (min-resolution: 190dpi) and (min-width: 375px),
+screen and (min-resolution: 2dppx) and (min-width: 375px) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-tablet-768@x2.jpg');
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: flex-start;
+        padding: 40px;
+        min-height: 890px;
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-desktop-1200.jpg');
+    }
+
+    .hero-text {
+        width: 484px;
+        font-size: 28px;
+        line-height: calc(34 / 28);
+    }
+
+    .hero-btn {
+        flex-direction: row;
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+
+    .scroll-btn {
+        font-size: 14px;
+        line-height: calc(18 / 14);
+    }
+
+    .scroll-svg {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 190dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-desktop-1200@x2.jpg');
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-section {
+        min-height: 600px;
+    }
+}

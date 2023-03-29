@@ -32,6 +32,7 @@
      border: 1px solid #ccc;
     margin-bottom: 14px;
     margin-top: 4px;
+    overflow: hidden;
  }
 
  .modal-btn.submit {
@@ -57,7 +58,7 @@
     position: relative;
 }
 .thank-you-block {
-    margin: 74px 10px 0 50px;
+    margin: 40px 10px 0 57px;
     position: relative;
 }
 
@@ -69,6 +70,9 @@
     z-index: 1;
     top: 0;
     left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -86,7 +90,7 @@
  }
 
 #modal-thankyou p {
-    letter-spacing: -0.02em;
+letter-spacing: -0.02em;
     color: var(--pressed-state-orange);
     line-height: 1.1;
     height: 64px;
@@ -169,7 +173,14 @@ position: absolute;
  }
 
  textarea.modal-form.textarea.input-text {
-     height: 91px;
+    height: 91px;
+        resize: none;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 14px;
         margin-top: 4px;
  }
 
@@ -222,6 +233,7 @@ display: flex;
     justify-content: center;
     gap: 16px;
     margin-bottom: 40px;
+    max-height: 200px;
 }
 .buy-now-title {
     margin-bottom: 32px;
@@ -245,11 +257,40 @@ li.modal-buy-now-item:focus {
     color: var(--orange-background);
 }
 
+.pagination-taras{
+    margin-bottom: 32px;
+}
 
+ .swiper-top-seller {
+     display: block;
+ }
 
+ .li-top-seller {
+    border-radius: 15px;
+    background: var(--primary-text-light-color);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    max-width: 231px;
+    height: 268px;
+    padding: 32px 32px 0 32px;
+}
 
-
-
+.modal-buy-now-gram.mobile {
+    text-align: center;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    margin-top: 16px;
+    color: var(--primary-dark-color);
+    font-weight: 600;
+    margin-bottom: 28px;
+    padding: 8px 27px;
+    width: 100%;
+}
+button#close-modal-btn:active,.close-button .close-icon:active,button#close-modal-btn:hover,
+.close-button .close-icon:hover {
+    background-color: var(--primary-background-light-color);
+    stroke: var(--orange-background);
+    border-radius: 50%;
+}
 
 @media screen and (max-width: 429px) {
 .thank-you-chocolate {
@@ -257,6 +298,12 @@ li.modal-buy-now-item:focus {
             bottom: 0px;
             left: 0px;
     }
+        .big-chocolate {
+            display: none;
+        }
+                .small-chocolate {
+                    display: block;
+                }
 }
 
 @media screen and (min-width: 429px) and (max-width: 768px) {
@@ -264,6 +311,12 @@ li.modal-buy-now-item:focus {
          position: absolute;
     bottom: 0px;
     left: 0px;
+        }
+    .big-chocolate {
+    display: none;
+    }
+        .small-chocolate {
+            display: block;
         }
 }
 
@@ -276,7 +329,7 @@ li.modal-buy-now-item:focus {
      overflow-y: scroll;
  }
  .modal-buy-now {
-     max-width: 311px;
+     max-width: 409px;
      margin-left: auto;
      margin-right: auto;
  }
@@ -284,10 +337,13 @@ li.modal-buy-now-item:focus {
      display: none;
  }
 
- 
+
 
 }
-
+.swiper-slide.ul-top-seller.swiper-slide-active {
+    max-width: 409px;
+    margin-bottom: 25px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) 
 {
 .modal-buy-now {
@@ -296,8 +352,10 @@ li.modal-buy-now-item:focus {
     left: 50%;
     max-width: 609px;
     transform: translate(-50%, -50%) scale(1);
-    margin-top: 60px;
-    margin-bottom: 60px;
+    max-height: 609px;
+    overflow: auto;
+    /*margin-top: 60px;
+    margin-bottom: 60px;*/
 }
 .backdrop {
     overflow-y: scroll;
@@ -310,18 +368,32 @@ li.modal-buy-now-item:focus {
 .modal-thank-you {
     max-width: 516px;
     max-height: 414px;
+    padding: 26px 26px;
 }
 
 .thank-you-chocolate {
     position: absolute;
-    bottom: -203px;
-    left: -65px;
+    bottom: 0px;
+    left: 0px;
+    max-width: 300px;
 }
 
 .thank-you-block {
-    margin: 74px 10px 0 50px;
     position: relative;
+    float: right;
+    margin: 92px 10px 0 0;
 }
+ #modal-thankyou p {
+    width: 309px;
+ }
+
+ .small-chocolate {
+     display: none;
+ }
+
+ .swiper-top-seller {
+     display: none;
+ }
 }
 @media screen and (min-width: 1200px) {
     .modal-buy-now {
@@ -330,9 +402,12 @@ li.modal-buy-now-item:focus {
         left: 50%;
         max-width: 609px;
         transform: translate(-50%, -50%) scale(1);
-        margin-top: 60px;
-        margin-bottom: 60px;
+       /* margin-top: 60px;
+        margin-bottom: 60px;*/
+        max-height: 609px;
+            overflow: auto;
     }
+    
         .personal-info-inputs {
             display: flex;
             column-gap: 21px;
@@ -344,12 +419,98 @@ li.modal-buy-now-item:focus {
 
 .thank-you-chocolate {
     position: absolute;
-    bottom: -203px;
-    left: -65px;
+    bottom: 0px;
+    left: 0px;
+    max-width: 300px;
 }
 
 .thank-you-block {
-    margin: 74px 10px 0 50px;
+margin: 92px 10px 0 0px;
     position: relative;
+    float: right;
 }
+
+.small-chocolate {
+    display: none;
+}
+
+#modal-thankyou p {
+    height: 70px;
+    width: 309px;
+
+}
+
+ .top-seller-title {
+     margin: 0 0 50px 0px;
+ }
+
+ .top-seller-info.mobile,
+ .mobile-bottom {
+     display: none;
+ }
+
+ .top-seller-item:last-child {
+     display: block;
+ }
+
+ .top-seller-button-info {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+
+ }
+
+ .top-seller-info {
+     max-width: 407px;
+     max-height: 72px;
+ }
+
+ .top-seller-item img {
+     margin-bottom: 0px;
+
+ }
+
+ .top-seller-button {
+     width: 162px;
+     height: 50px;
+ }
+
+ .top-seller-item {
+     flex-basis: calc((100% - 16px)/3);
+     max-width: 368px;
+ }
+
+ .swiper-top-seller {
+     display: none;
+ }
+}
+
+.wrapper-top-seller {
+    gap: 0;
+    margin-bottom: 14px;
+}
+
+.swiper-scrollbar-top-seller {
+    display: none;
+}
+
+.swiper-slide-for-taras {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+
+.modal-topsell {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+    /* додаємо transition */
 }

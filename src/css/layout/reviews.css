@@ -1,0 +1,115 @@
+.section-feedback{
+  margin: auto;
+}
+.container-feedback{
+  max-width: 335px;
+  margin: auto;
+  overflow: hidden;
+}
+.h2-rewiews {
+  margin-bottom: 74px;
+}
+.list-feedback {
+  max-width: 335px;
+}
+.block-reviews {
+  margin-bottom: 50px;
+}
+.feedback-card{
+  position: relative;
+  top: -12%;
+}
+.block-card-reviews {
+  gap: 0px;
+}
+.feedback-item{
+  max-width: 100%;
+  max-height: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
+.feedback-user-img {
+  position: relative;
+  top: -50%;
+}
+.feedback-user-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback-user-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 18px 0px;
+  margin: auto;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.feedback-btn {
+  display: block;
+  margin: auto;
+  margin-top: 32px;
+  padding: 14px 40px;
+  gap: 14px;
+  width: 222px;
+  height: 50px;
+  border: 1px solid #FD9222;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  transition: border, background-color var(--transition);
+  background-color: transparent;
+}
+.feedback-btn:hover,
+.feedback-btn:focus {
+  border: 1px solid #FD9222;
+  background-color: #FD9222;
+  color: white;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-feedback {
+  max-width: 714px;
+  }
+  .container-feedback {
+  max-width: 714px;
+  margin: auto;
+  overflow: hidden;
+  }
+  .list-feedback {
+  max-width: 344px;
+  }
+  .block-card-reviews {
+    gap: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-feedback {
+  max-width: 1146px;
+  }
+  .container-feedback {
+  max-width: 1146px;
+  margin: auto;
+  overflow: hidden;
+  }
+  .list-feedback {
+  max-width: 360px;
+  }
+  .block-card-reviews{
+    gap: 28px;
+  }
+}
+.swiper-pagination{
+  position: unset;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
