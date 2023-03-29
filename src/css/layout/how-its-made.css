@@ -273,7 +273,7 @@
 
 @media only screen and (max-width: 767px) {
   .how-its-made-paragraph {
-    width: 307px;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
