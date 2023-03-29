@@ -103,14 +103,14 @@ background-color: transparent;
   outline-offset: 0;
 }
 
-@media screen and (max-height: 500px) {
+/*@media screen and (max-height: 500px) {
   .modal {
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
     overflow: hidden auto;
   }
-}
+}*/
 
 .modal.active,
 .modal-overlay.active {

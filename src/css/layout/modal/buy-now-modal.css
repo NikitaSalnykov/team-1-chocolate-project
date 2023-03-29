@@ -430,7 +430,9 @@ margin: 92px 10px 0 0px;
 .small-chocolate {
     display: none;
 }
-
+.modal-thank-you img {
+    border-bottom-left-radius: 15px;
+}
 #modal-thankyou p {
     height: 70px;
     width: 309px;
@@ -510,4 +512,8 @@ margin: 92px 10px 0 0px;
     display: none;
     transition: opacity 0.3s ease-in-out;
     /* додаємо transition */
+}
+.buy-now-form-field.errormodule {
+    color: red;
+    
 }
