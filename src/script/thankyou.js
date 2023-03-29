@@ -2,6 +2,7 @@ const toggleBtn = document.getElementById("toggle-btn-send");
 const modal = document.getElementById("modal-thankyou");
 const lastmodal = document.getElementById("modal-leave");
 const closeBtn = modal.querySelector(".close-button-thank-you");
+const backgroundColor = document.querySelector(".leave-background-color")
 
 // заполни поля Name + Email + phone
 const nameInput = document.getElementById("name-leave");
@@ -20,6 +21,7 @@ toggleBtn.addEventListener("click", (e) => {
   } else {
     lastmodal.style.display = "none";
     modal.style.display = "block";
+    backgroundColor.style.position = "unset";
   }  
 
 });
