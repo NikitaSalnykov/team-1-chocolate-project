@@ -10,20 +10,27 @@
         <div class="buy-now-form-field">
             <label class="buy-now-info" for="personal-info"><span></span>
                 <div class="modal-input surname">
-                    <input class="" type="text" id="name" name="name" placeholder="Name" pattern="[a-zA-Zа-яА-Я]+"
-                        minlength="2" required>
+
+                    <input class="modal-input surname" type="text" id="name-leave" name="name" placeholder="Name"
+                    pattern="[a-zA-Zа-яА-Я]+"
+                    minlength="2" required>
+
                 </div>
             </label>
         </div>
         <div class="buy-now-form-field">
             <label class="buy-now-info" for="email">
-                <input class="modal-input surname" type="email" id="email" name="email" placeholder="Email" required>
+
+                <input class="modal-input surname" type="email" id="email-leave" name="email" placeholder="Email" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required>
+
             </label>
         </div>
         <div class="buy-now-form-field">
             <label class="buy-now-info" for="phone"><span></span>
-                <input class="modal-input input-text input-phone" type="tel" name="tel" placeholder="Phone number" required
-                    pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" autocomplete="off">
+
+                <input class="modal-input input-text input-phone" type="tel" id="tel-leave" name="tel tel-leave" 
+                pattern="[0-9\s]{13,19}" placeholder="Phone number" maxlength="9" autocomplete="off" required>
+
                 <span class="buy-now-input-svg-phone form-leave-number">
                     <svg width="24" height="18">
                         <use href="/img/symbol-defs.svg#icon-ukraine"></use>

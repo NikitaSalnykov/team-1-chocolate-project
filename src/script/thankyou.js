@@ -3,9 +3,25 @@ const modal = document.getElementById("modal-thankyou");
 const lastmodal = document.getElementById("modal-leave");
 const closeBtn = modal.querySelector(".close-button-thank-you");
 
-toggleBtn.addEventListener("click", () => {
+// заполни поля Name + Email + phone
+const nameInput = document.getElementById("name-leave");
+const emailInput = document.getElementById("email-leave");
+const phoneInput = document.getElementById("tel-leave"); 
+
+toggleBtn.addEventListener("click", (e) => {
+  e.preventDefault()
+
+  if (!nameInput.value || nameInput.checkValidity()) { 
+    alert("Name is empty");
+  } else if (!emailInput.value || emailInput.checkValidity()) {
+    alert("Email is empty");
+  } else if (!phoneInput.value) {
+    alert("Phone is empty");
+  } else {
     lastmodal.style.display = "none";
     modal.style.display = "block";
+  }  
+
 });
 
 closeBtn.addEventListener("click", () => {
@@ -13,7 +29,9 @@ closeBtn.addEventListener("click", () => {
 });
 
 window.addEventListener("click", (event) => {
-  if (event.target === modal) {
+
+  if (event.target === modal ) {
+
     modal.style.display = "none";
   }
 });
