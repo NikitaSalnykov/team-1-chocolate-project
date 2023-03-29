@@ -56,6 +56,8 @@
 .how-btn:hover,
 .how-btn:focus {
     color: var(--orange-background);
+    transition: var(--transition);
+
 }
 
 .scroll-btn {
