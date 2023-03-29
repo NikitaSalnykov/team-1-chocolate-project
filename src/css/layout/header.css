@@ -71,7 +71,7 @@
   fill: transparent;
 }
 .header-social-icon {
-  stroke: #111111;
+  stroke: var(--primary-dark-color);
   fill: transparent;
 }
 .change:hover svg use,
@@ -87,7 +87,7 @@
   font-size: calc(14px + (18 - 14) * ((100vw - 768px) / (1199 - 768)));
   line-height: 1.19;
   letter-spacing: -0.03em;
-  color: #111111;
+  color: var(--primary-dark-color);
   margin-right: calc(6px + (7 - 6) * ((100vw - 768px) / (1199 - 768)));
 }
 .logo-choc-header {
@@ -102,7 +102,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #111111;
+  color: var(--primary-dark-color);
   transition: color var(--transition)
 }
 .nav-head:hover,
@@ -124,7 +124,7 @@
   background-color: transparent;
 }
 .mobile-menu-burger-icon {
-  stroke: #111111;
+  stroke: var(--primary-dark-color);
   width:calc(32px + (35 - 32) * ((100vw - 768px) / (1199 - 768)));
   height:calc(22px + (24 - 22) * ((100vw - 768px) / (1199 - 768)));
 }
@@ -157,7 +157,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #FFFFFF;
+  color: var(--primary-text-light-color);
 }
 @media (min-width: 1200px) {
   .mobil-menu {
@@ -168,8 +168,6 @@
   transform: translateX(0);
 }
 .js-close-menu {
-  width: 24px;
-  height: 24px;
   position: absolute;
   top: calc(28px + (33 - 28) * ((100vw - 375px) / (768 - 375)));
   right: calc(28px + (41 - 28) * ((100vw - 375px) / (768 - 375)));
@@ -217,15 +215,27 @@
 }
 
 .menu-mobile {
+  position: relative;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #FFFFFF;
+  color: var(--primary-text-light-color);
 }
 .menu-mobile:focus,
 .menu-mobile:hover{
   color: var(--orange-background);
+}
+.menu-mobile:hover::after,
+.menu-mobile:focus::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 1px;
+  margin-top:8px;
+  
+  background-color: var(--orange-background);
 }
 
 @media (min-width: 1200px) {
@@ -251,7 +261,7 @@
   transition: background-color var(--transition), fill var(--transition);
 }
 .mob-but-cloce {
-  stroke: #FFFFFF;
+  stroke: var(--primary-text-light-color);
 }
 .menu-mobile-list-link {
   margin-bottom: 24px;
@@ -267,11 +277,18 @@
   gap: 24px;
 }
 .menu-mobile-social-icon {
-  stroke: #FFFFFF;
+  stroke: var(--primary-text-light-color);
   fill: transparent;
 }
 
-
-.mob-but-cloce:active{
+.mob-but-cloce:hover,
+.mob-but-cloce:focus{
   stroke: var(--orange-background);
 }
+.cross-btn:active{
+  width: 40px;
+  height: 40px;
+  stroke: var(--orange-background);
+}
+
+
