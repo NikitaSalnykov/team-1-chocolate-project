@@ -226,6 +226,8 @@
 .menu-mobile:hover{
   color: var(--orange-background);
 }
+.nav-head:hover::after,
+.nav-head:focus::after,
 .menu-mobile:hover::after,
 .menu-mobile:focus::after{
   content: '';
