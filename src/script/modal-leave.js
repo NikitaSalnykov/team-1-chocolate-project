@@ -8,7 +8,6 @@ toggleBtn.addEventListener("click", () => {
   backgroundColor.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
   backgroundColor.style.position = "fixed";
   backgroundColor.style.top = "0";
-  backgroundColor.style.left = "0";
   backgroundColor.style.zIndex = "9999";
   backgroundColor.style.width = "100%";
   backgroundColor.style.height = "100%";
@@ -26,14 +25,3 @@ window.addEventListener("click", (event) => {
     backgroundColor.style.position = "unset";
   }
 });
-
-// .leave-background-color {
-//     position: fixed;
-//     background-color: rgba(0, 0, 0, 0.5);
-//     top: 0;
-//     left: 0;
-//     z-index: 9999;
-//     width: 100%;
-//     height: 100%;
-
-// }

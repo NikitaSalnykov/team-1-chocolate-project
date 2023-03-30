@@ -152,6 +152,7 @@
 .how-mde-image {
   cursor: pointer;
   border-radius: 15px;
+  height: 100%;
 }
 .how-its-made-btn {
   display: flex;
