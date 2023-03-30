@@ -25,7 +25,7 @@
     font-size: 20px;
     line-height: calc(24/20);
     letter-spacing: -0.03em;
-    max-width: 290px;
+    width: 290px;
 }
 
 .hero-btn {
@@ -52,12 +52,9 @@
     line-height: calc(17/14);
     border: 1px solid currentColor;
 }
-
 .how-btn:hover,
 .how-btn:focus {
     color: var(--orange-background);
-    transition: var(--transition);
-
 }
 
 .scroll-btn {
@@ -71,8 +68,9 @@
     letter-spacing: -0.03em;
 }
 
-.scroll-text {
-    transition: var(--transition);
+.scroll-btn:hover,
+.scroll-btn:focus {
+    color: var(--orange-background);
 }
 
 .scroll-svg {
@@ -83,40 +81,26 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     fill: var(--orange-background);
-    transition: var(--transition);
+
 }
 
-.scroll-btn:hover .scroll-text,
-.scroll-btn:focus .scroll-text {
-    color: var(--orange-background);
-}
-
-.scroll-btn:hover .scroll-svg,
-.scroll-btn:focus .scroll-svg {
+.scroll-svg:hover,
+.scroll-svg:focus {
     background-color: var(--orange-background);
-    fill: var(--primary-text-light-color);
-}
-
-@media screen and (max-width: 370px) {
-    .main-how-btn {
-        display: flex;
-        gap: 34px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+    fill:var(--primary-text-light-color);
 }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero-section {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-mobile-375@x2.jpg');
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-mobile-375@x2.jpg');
     }
 }
 
 @media (min-width: 375px) {
     .hero-section {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-tablet-768.jpg');
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-tablet-768.jpg');
     }
 }
 
@@ -124,19 +108,19 @@
 screen and (min-resolution: 190dpi) and (min-width: 375px),
 screen and (min-resolution: 2dppx) and (min-width: 375px) {
     .hero-section {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-tablet-768@x2.jpg');
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-tablet-768@x2.jpg');
     }
 }
 
 @media (min-width: 768px) {
     .hero-section {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-end;
-        justify-content: flex-start;
+            flex-direction: row;
+                flex-wrap: wrap;
+                align-content: flex-end;
+                justify-content: flex-start;
         padding: 40px;
         min-height: 890px;
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-desktop-1200.jpg');
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-desktop-1200.jpg');
     }
 
     .hero-text {
@@ -166,7 +150,7 @@ screen and (min-resolution: 2dppx) and (min-width: 375px) {
 screen and (min-resolution: 190dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero-section {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('/img/chocolate-desktop-1200@x2.jpg');
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/chocolate-desktop-1200@x2.jpg');
     }
 }
 
@@ -175,12 +159,3 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         min-height: 600px;
     }
 }
-
-#scroll-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    transform: rotate(180deg);
-  transition: 0.5s ease-in-out;
-  }
