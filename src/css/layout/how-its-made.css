@@ -89,7 +89,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
   .image-how-its-made {
     border-radius: 15px;
     background-position: center;
@@ -166,6 +166,8 @@
   height: 44px;
   border-radius: 50%;
   border: 1px solid#fff;
+  transition: var(--transition);
+  pointer-events: none;
 }
 
 .how-its-made-btn:hover .how-its-made-icon {
@@ -271,9 +273,10 @@
   width: 350px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .how-its-made-paragraph {
-    width: 307px;
+    width: 100%;
+    max-width: 350px;
     margin-bottom: 20px;
   }
 }
