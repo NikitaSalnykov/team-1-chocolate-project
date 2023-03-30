@@ -21,8 +21,8 @@
 
                 <li class="modal-buy-now-item">
                     <img srcset="/img/kisspng-chocolate-bar-praline-kinder-chocolate.jpg 1x, /img/kisspng-chocolate-bar-praline-kinder-chocolate@2x.jpg 2x"
-                        src="/img/kisspng-chocolate-bar-praline-kinder-chocolate.jpg" alt="kisspng-chocolate-bar-kinder"
-                        width="120">
+                        src="/img/kisspng-chocolate-bar-praline-kinder-chocolate.jpg"
+                        alt="kisspng-chocolate-bar-kinder" width="120">
                     <div class="modal-buy-now-gram">200 g</div>
                 </li>
 
@@ -69,27 +69,25 @@
                 <div class="swiper-scrollbar swiper-scrollbar-top-seller"></div>
             </div>
             <div class="buy-now-form-field">
-                <label class="buy-now-info"><span>Personal information</span>
+                <label class="buy-now-info" for="personal-info"><span>Personal information</span>
                     <div class="personal-info-inputs">
-                        <input class="modal-input name" type="text" id="name" name="name" placeholder="Name"
-                            pattern="[a-zA-Zа-яА-Я]+" minlength="2" required>
-                        <input class="modal-input surname" type="text" id="surname" name="surname" placeholder="Surname"
-                            pattern="[a-zA-Zа-яА-Я]+" minlength="2" required>
+                        <input class="modal-input name" type="text" id="name" name="name" placeholder="Name" pattern="[a-zA-Zа-яА-Я]+" minlength="2" required>
+                        <input class="modal-input surname" type="text" id="surname" name="surname" placeholder="Surname" pattern="[a-zA-Zа-яА-Я]+" minlength="2" 
+                            required>
                     </div>
                 </label>
             </div>
             <div class="buy-now-form-field">
-                <label class="buy-now-info">Email:
+                <label class="buy-now-info" for="email">Email:
                     <input class="modal-input surname" type="email" id="email" name="email"
                         placeholder="Enter Your email" required>
-
                 </label>
             </div>
             <div class="buy-now-form-field">
-                <label class="buy-now-info"><span>Phone number</span>
-                    <input class="modal-input input-text input-phone" id="phone" type="tel" name="tel"
-                        placeholder="Phone number" required pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" maxlength="9"
-                        autocomplete="off">
+                <label class="buy-now-info" for="phone"><span>Phone number</span>
+                    <input class="modal-input input-text input-phone" type="tel" name="tel" placeholder="Phone number"
+                        required
+        pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" autocomplete="off">
                     <span class="buy-now-input-svg-phone">
                         <svg width="24" height="18">
                             <use href="/img/symbol-defs.svg#icon-ukraine"></use>
@@ -97,14 +95,12 @@
                         </svg>
                         <span class="buy-now-phone-maska">+380</span>
                     </span>
-
                 </label>
             </div>
 
             <div class="buy-now-form-field">
-                <label class="buy-now-info"><span>Card number</span>
-                    <input class="modal-input input-text" type="tel" id="cardnumber" inputmode="numeric"
-                        pattern="[0-9\s]{13,19}" maxlength="19" required>
+                <label class="buy-now-info" for="phone"><span>Card number</span>
+                    <input class="modal-input input-text" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" required>
                     <span class="buy-now-input-svg-credit-number">
                         <svg width="32" height="21">
                             <use href="/img/symbol-defs.svg#icon-mastercard"></use>
@@ -116,15 +112,12 @@
             </div>
 
             <div class="buy-now-form-field">
-                <label class="buy-now-info"><span>Comment</span>
+                <label class="buy-now-info" for="phone"><span>Comment</span>
                     <textarea class="modal-form textarea input-text" name="comment" placeholder="Text input"></textarea>
                 </label>
             </div>
-            <div class="buy-now-form-field errormodule">
-                <div id="phone-error"></div>
-            </div>
-            <button id="toggle-btn-sendTT" class="modal-btn submit" type="submit">Submit</button>
-            <div id="phone-error"></div>
+
+            <button class="modal-btn submit" type="submit">Submit</button>
         </form>
     </div>
 </div>
