@@ -149,12 +149,10 @@
 .how-its-made-img {
   width: 100%;
 }
-
 .how-mde-image {
   cursor: pointer;
   border-radius: 15px;
 }
-
 .how-its-made-btn {
   display: flex;
   position: absolute;
@@ -166,6 +164,9 @@
   height: 44px;
   border-radius: 50%;
   border: 1px solid#fff;
+  transition: var(--transition);
+  pointer-events: none;
+
 }
 
 .how-its-made-btn:hover .how-its-made-icon {
@@ -181,7 +182,7 @@
   height: 46px;
 }
 
-.image-how-its-made:hover ~ .how-its-made-btn {
+.image-how-its-made:hover~.how-its-made-btn {
   border: 1px solid var(--orange-background);
   width: 46px;
   height: 46px;
@@ -194,7 +195,7 @@
   height: 21px;
 }
 
-.image-how-its-made:hover + .how-its-made-btn .how-its-made-icon {
+.image-how-its-made:hover+.how-its-made-btn .how-its-made-icon {
   stroke: var(--orange-background);
   fill: var(--orange-background);
   width: 20px;
@@ -273,7 +274,7 @@
 
 @media only screen and (max-width: 767px) {
   .how-its-made-paragraph {
-    width: 100%;
+    width: 307px;
     margin-bottom: 20px;
   }
 }
