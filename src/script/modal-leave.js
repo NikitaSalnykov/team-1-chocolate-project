@@ -1,7 +1,7 @@
 const toggleBtn = document.getElementById("toggle-btn-leave");
 const modals = document.getElementById("modal-leave");
 const closeBtn = modals.querySelector(".close-leave");
-const backgroundColor = document.querySelector(".leave-background-color")
+const backgroundColor = document.querySelector(".leave-background-color");
 
 toggleBtn.addEventListener("click", () => {
   modals.style.display = "block";
