@@ -37,6 +37,7 @@
 .li-our-product:hover .button-our-product,
 .li-our-product:focus .button-our-product {
     background-color: var(--orange-background);
+    color: var(--primary-background-light-color);
 }
 .li-our-product .img-our-product {
     transition: var(--transition);

@@ -140,7 +140,7 @@ screen and (min-resolution: 2dppx) and (min-width: 375px) {
     }
 
     .hero-text {
-        width: 484px;
+        max-width: 484px;
         font-size: 28px;
         line-height: calc(34 / 28);
     }
@@ -175,12 +175,3 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         min-height: 600px;
     }
 }
-
-#scroll-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    transform: rotate(180deg);
-  transition: 0.5s ease-in-out;
-  }
