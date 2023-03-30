@@ -1,6 +1,6 @@
 <section class="section" id="hero">
     <div class="container">
-        <div class="hero-section">
+        <div class="hero-section animate__animated animate__zoomIn">
             <h1 class="visually-hidden">Simply Chocolate</h1>
             <h2 class="hero-text">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h2>
             <div class="hero-btn">
@@ -8,12 +8,81 @@
                 <button class="main-btn" type="button" id="hero-btn-bue">Buy now</button>
                 <a class="how-btn" href="#how-its-made">How it’s made</a>
                 </div>
-                <a class="scroll-btn" href="#footer">scroll down
-                <svg class="scroll-svg">
-                    <use href="../img/symbol-defs.svg#icon-scroll"></use>
-                </svg>
+                <a class="scroll-btn" href="#footer">
+                    <span class="scroll-text">Scroll down</span>
+                    <svg class="scroll-svg">
+                        <use href="/img/symbol-defs.svg#icon-scroll"></use>
+                    </svg>
+
                 </a>            
             </div>
         </div>
     </div>
-</section>
+
+    <div id="scroll-top-btn">
+        <a class="scroll-btn" href="#footer">
+            <svg class="scroll-svg">
+                <use href="/img/symbol-defs.svg#icon-scroll"></use>
+            </svg>
+        </a>            
+      </div>
+    </section>
+
+
+
+<script>// получаем элементы кнопки прокрутки и кнопки прокрутки вверх
+    const scrollBtn = document.querySelector('.scroll-btn');
+    const scrollTopBtn = document.querySelector('#scroll-top-btn');
+    
+    // добавляем обработчик клика на кнопку скролла вниз
+    scrollBtn.addEventListener('click', () => {
+      // подключаем обработчик скролла страницы
+      window.addEventListener('scroll', onScroll);
+      
+      // отключаем обработчик клика на кнопку скролла вниз
+      scrollBtn.removeEventListener('click', onScrollBtnClick);
+    });
+    
+    // функция обработчика клика на кнопку скролла вниз
+    function onScrollBtnClick() {
+      // показываем кнопку прокрутки вверх
+      scrollTopBtn.style.display = 'block';
+      
+      // прокручиваем страницу до верхней части
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      
+      // подключаем обработчик скролла страницы
+      window.addEventListener('scroll', onScroll);
+      
+      // отключаем обработчик клика на кнопку скролла вниз
+      scrollBtn.removeEventListener('click', onScrollBtnClick);
+    }
+    
+    // добавляем обработчик клика на кнопку скролла вниз
+    scrollBtn.addEventListener('click', onScrollBtnClick);
+    
+    // функция обработчика скролла страницы
+    function onScroll() {
+      // если пользователь прокрутил страницу больше, чем на 1000 пикселей, показываем кнопку прокрутки вверх
+      if (window.pageYOffset > document.documentElement.scrollHeight * 0.9 - document.documentElement.clientHeight) {
+        scrollTopBtn.style.display = 'block';
+      } else {
+        scrollTopBtn.style.display = 'none';
+      }
+    }
+    
+    // добавляем обработчик клика на кнопку прокрутки вверх
+    scrollTopBtn.addEventListener('click', () => {
+      // прокручиваем страницу до верхней части
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    </script>
+
+    

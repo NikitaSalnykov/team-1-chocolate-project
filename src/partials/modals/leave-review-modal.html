@@ -1,0 +1,52 @@
+<div class="leave-background-color">
+    <div class="modal-leave" id="modal-leave">
+        <form id="modal-form" class="modal-form" onsubmit="handleSubmit(event)">
+            <h2 class="title title-for-leave">LEAVE A REVIEW <span class="title title-span2">ABOUT</span> <span
+                    class="title-exception">OUR CHOCOLATE</span></h2>
+            <button type="button" class="close-button btn-close-leave close-leave">
+                <svg width="24" height="24" class="close-icon">
+                    <use width="12" height="12" href="/img/symbol-defs.svg#icon-x-close"></use>
+                </svg>
+            </button>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="personal-info"><span></span>
+                    <div class="modal-input surname">
+    
+                        <input class="modal-input surname" type="text" id="name-leave" name="name" placeholder="Name"
+                            pattern="[a-zA-Zа-яА-Я]+" minlength="2" required>
+    
+                    </div>
+                </label>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="email">
+    
+                    <input class="modal-input surname" type="email" id="email-leave" name="email" placeholder="Email"
+                        pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required>
+    
+                </label>
+            </div>
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="phone"><span></span>
+    
+                    <input class="modal-input input-text input-phone" type="tel" id="tel-leave" name="tel tel-leave"
+                        pattern="[0-9\s]{13,19}" placeholder="Phone number" maxlength="9" autocomplete="off" required>
+    
+                    <span class="buy-now-input-svg-phone form-leave-number">
+                        <svg width="24" height="18">
+                            <use href="/img/symbol-defs.svg#icon-ukraine"></use>
+                        </svg>
+                        <span class="buy-now-phone-maska">+380</span>
+                    </span>
+                </label>
+            </div>
+    
+            <div class="buy-now-form-field">
+                <label class="buy-now-info" for="phone"><span></span>
+                    <textarea class="modal-form textarea input-text" name="comment" placeholder="Enter text"></textarea>
+                </label>
+            </div>
+            <button id="toggle-btn-send" class="modal-btn submit" type="submit">Send</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+.modal-leave {
+    display: none;
+    opacity: 1;
+    width: 100%;
+    max-width: 311px;
+    max-height: 471px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 3px;
+    transition: 0.3s all;
+    background: var(--primary-background-light-color);
+    border-radius: 15px;
+    padding: 32px 32px 32px 24px;
+    overflow-y: auto;
+}
+.title-for-leave {
+    text-align: start;
+    margin-bottom: 32px;
+    letter-spacing: -0.03em;
+}
+.form-leave-number {
+    top: 25%;
+}
+.btn-close-leave {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    background-color: transparent;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .modal-leave {
+    max-width: 517px;
+    max-height: 631px;
+    padding: 40px;
+    }
+    .title-for-leave {
+    text-align: start;
+    margin-bottom: 40px;
+    letter-spacing: -0.03em;        
+    }
+}
+@media (min-width: 1200px) {
+    .modal-leave {
+    max-width: 517px;
+    max-height: 631px;
+    padding: 40px;
+    }
+}
