@@ -91,7 +91,7 @@ letter-spacing: -0.02em;
     color: var(--pressed-state-orange);
     line-height: 1.1;
     height: 64px;
-    width: 219px;
+    width: 100%;
     text-align: left;
 }
 
