@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   
-  <script type="module" crossorigin src="/team-1-chocolate-project/assets/index-3cbba6ee.js"></script>
-  <link rel="stylesheet" href="/team-1-chocolate-project/assets/index-d1e9ac3b.css">
+  <script type="module" crossorigin src="/team-1-chocolate-project/assets/index-b7f7f1b3.js"></script>
+  <link rel="stylesheet" href="/team-1-chocolate-project/assets/index-b1820591.css">
 </head>
 
 <body>
@@ -838,7 +838,7 @@
             </button>
             <div class="buy-now-form-field">
                 <label class="buy-now-info" for="personal-info"><span></span>
-                    <div class="modal-input surname">
+                    <div class="modal-input surname name-for-leave">
     
                         <input class="modal-input surname" type="text" id="name-leave" name="name" placeholder="Name"
                             pattern="[a-zA-Zа-яА-Я]+" minlength="2" required>
@@ -849,7 +849,7 @@
             <div class="buy-now-form-field">
                 <label class="buy-now-info" for="email">
     
-                    <input class="modal-input surname" type="email" id="email-leave" name="email" placeholder="Email"
+                    <input class="modal-input surname email-for-leave" type="email" id="email-leave" name="email" placeholder="Email"
                         pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required>
     
                 </label>
@@ -857,8 +857,8 @@
             <div class="buy-now-form-field">
                 <label class="buy-now-info" for="phone"><span></span>
     
-                    <input class="modal-input input-text input-phone" type="tel" id="tel-leave" name="tel tel-leave"
-                        pattern="[0-9\s]{13,19}" placeholder="Phone number" maxlength="9" autocomplete="off" required>
+                    <input class="modal-input input-text input-phone phone-for-leave" type="tel" id="tel-leave" name="tel tel-leave"
+                        pattern="[0-9]{9}" placeholder="Phone number" maxlength="9" autocomplete="off" required>
     
                     <span class="buy-now-input-svg-phone form-leave-number">
                         <svg width="24" height="18">
@@ -871,7 +871,7 @@
     
             <div class="buy-now-form-field">
                 <label class="buy-now-info" for="phone"><span></span>
-                    <textarea class="modal-form textarea input-text" name="comment" placeholder="Enter text"></textarea>
+                    <textarea id="leave-comment" class="modal-form textarea input-text" name="comment" placeholder="Enter text"></textarea>
                 </label>
             </div>
             <button id="toggle-btn-send" class="modal-btn submit" type="submit">Send</button>
