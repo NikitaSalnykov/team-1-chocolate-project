@@ -66,6 +66,7 @@ body{
     padding-right: 40px;
     padding-left: 40px;
 
+    font-size: 18px;
     line-height: calc(22 / 18);
   }
   .section {
