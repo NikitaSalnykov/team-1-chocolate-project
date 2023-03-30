@@ -50,3 +50,23 @@
     padding: 40px;
     }
 }
+
+.name-for-leave:invalid {
+    color: red;
+}
+.phone-for-leave:invalid {
+    color: red;
+}
+.email-for-leave:invalid {
+    color: red;
+}
+
+.name-for-leave:valid {
+    color: var(--orange-background);
+}
+.phone-for-leave:valid {
+    color: var(--orange-background);
+}
+.email-for-leave:valid {
+    color: var(--orange-background);
+}
