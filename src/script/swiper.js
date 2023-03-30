@@ -32,8 +32,4 @@ const swiper = new Swiper('.swipers', {
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
