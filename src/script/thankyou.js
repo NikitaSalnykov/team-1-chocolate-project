@@ -2,22 +2,22 @@ const toggleBtn = document.getElementById("toggle-btn-send");
 const modal = document.getElementById("modal-thankyou");
 const lastmodal = document.getElementById("modal-leave");
 const closeBtn = modal.querySelector(".close-button-thank-you");
-const backgroundColor = document.querySelector(".leave-background-color")
+const backgroundColor = document.querySelector(".leave-background-color");
+
 
 // заполни поля Name + Email + phone
 const nameInput = document.getElementById("name-leave");
 const emailInput = document.getElementById("email-leave");
 const phoneInput = document.getElementById("tel-leave"); 
+const commentInput = document.getElementById("leave-comment");
 
 toggleBtn.addEventListener("click", (e) => {
   e.preventDefault()
 
   if (!nameInput.value) { 
-    alert("Name is empty");
   } else if (!emailInput.value) {
-    alert("Email is empty");
   } else if (!phoneInput.value) {
-    alert("Phone is empty");
+  } else if (!commentInput.value) {
   } else {
     lastmodal.style.display = "none";
     modal.style.display = "block";
